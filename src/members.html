@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <title>Список участников - ПримБиз</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+@@include('header.html')
+
+<div class="page-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="breadcrumbs">
+                    <a href="#">Главная</a> / Участники
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="page-title">УЧАСТНИКИ КЛУБА ПРИМБИЗ</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 members-filters">
+                <div class="members-filters__text">
+                    <span class="members-filters__toggle">Поиск полезных людей</span> <span class="hide-sm">(<i class="jsFiltersText">открываются поля фильтра</i>)</span>
+                </div>
+                <div class="members-filters__main">
+                    <form action="#" class="members-filter-form">
+                        <div class="select-wrap">
+                            <select name="business" id="business" class="select">
+                                <option value="" disabled selected>Выберите сферу бизнеса</option>
+                                <option value="1">Сфера 1</option>
+                                <option value="2">Сфера 2</option>
+                                <option value="3">Сфера 3</option>
+                                <option value="4">Сфера 4</option>
+                                <option value="5">Сфера 5</option>
+                            </select>
+                            <span class="select-arrow"></span>
+                        </div>
+                        <div class="select-wrap">
+                            <select name="spec" id="spec" class="select">
+                                <option value="" disabled selected>Специализация</option>
+                                <option value="1">Специализация 1</option>
+                                <option value="2">Специализация 2</option>
+                                <option value="3">Специализация 3</option>
+                                <option value="4">Специализация 4</option>
+                                <option value="5">Специализация 5</option>
+                            </select>
+                            <span class="select-arrow"></span>
+                        </div>
+
+                        <div class="select-wrap narrow">
+                            <select name="city" id="city" class="select">
+                                <option value="" disabled selected>Город</option>
+                                <option value="1">Город 1</option>
+                                <option value="2">Город 2</option>
+                                <option value="3">Город 3</option>
+                                <option value="4">Город 4</option>
+                                <option value="5">Город 5</option>
+                            </select>
+                            <span class="select-arrow"></span>
+                        </div>
+                        <button type="submit" class="members-filters__show-btn">Показать</button>
+                        <div class="members-filters__reset">Сбросить фильтр</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                @@include('human.html', {
+                    "img": "img/face-1.jpg",
+                    "name": "Светлана Котляр",
+                    "text": "бизнес-коуч по международным стандартам (сертификат ACSTH). ",
+                    "fb": "true"
+                })
+            </div>
+            <div class="col-md-4">
+                @@include('human.html', {
+                    "img": "img/face-2.jpg",
+                    "name": "Евгения Артемьева",
+                    "text": "",
+                    "fb": "true"
+                })
+            </div>
+            <div class="col-md-4">
+                @@include('human.html', {
+                    "img": "img/face-3.jpg",
+                    "name": "Клюкин Василий",
+                    "text": "Трудолюбивый гений. Ведущий консультант олигархов в маркетинге и рекламе.",
+                    "fb": "true",
+                    "vk": "true"
+                })
+            </div>
+
+            <div class="col-md-4">
+                @@include('human.html', {
+                    "img": "img/face-2.jpg",
+                    "name": "Евгения Артемьева",
+                    "text": "",
+                    "ok": "true"
+                })
+            </div>
+            <div class="col-md-4">
+                @@include('human.html', {
+                    "img": "img/face-3.jpg",
+                    "name": "Клюкин Василий",
+                    "text": "Трудолюбивый гений. Ведущий консультант олигархов в маркетинге и рекламе.",
+                    "fb": "true",
+                    "google": "true"
+                })
+            </div>
+            <div class="col-md-4">
+                @@include('human.html', {
+                    "img": "img/face-1.jpg",
+                    "name": "Светлана Котляр",
+                    "text": "бизнес-коуч по международным стандартам (сертификат ACSTH). ",
+                    "inst": "true"
+                })
+            </div>
+
+            <div class="col-md-4">
+                @@include('human.html', {
+                    "img": "img/face-3.jpg",
+                    "name": "Клюкин Василий",
+                    "text": "Трудолюбивый гений. Ведущий консультант олигархов в маркетинге и рекламе.",
+                    "fb": "true",
+                    "vk": "true"
+                })
+            </div>
+            <div class="col-md-4">
+                @@include('human.html', {
+                    "img": "img/face-1.jpg",
+                    "name": "Светлана Котляр",
+                    "text": "бизнес-коуч по международным стандартам (сертификат ACSTH). ",
+                    "fb": "true"
+                })
+            </div>
+            <div class="col-md-4">
+                @@include('human.html', {
+                    "img": "img/face-2.jpg",
+                    "name": "Евгения Артемьева",
+                    "text": "",
+                    "fb": "true"
+                })
+            </div>
+
+            <div class="col-md-4">
+                @@include('human.html', {
+                    "img": "img/face-1.jpg",
+                    "name": "Светлана Котляр",
+                    "text": "бизнес-коуч по международным стандартам (сертификат ACSTH). ",
+                    "vk": "true",
+                    "ok": "true",
+                    "tw": "true"
+                })
+            </div>
+            <div class="col-md-4">
+                @@include('human.html', {
+                "img": "img/face-3.jpg",
+                "name": "Клюкин Василий",
+                "text": "Трудолюбивый гений. Ведущий консультант олигархов в маркетинге и рекламе.",
+                "fb": "true",
+                "youtube": "true"
+                })
+            </div>
+            <div class="col-md-4">
+                @@include('human.html', {
+                    "img": "img/face-2.jpg",
+                    "name": "Евгения Артемьева",
+                    "text": "",
+                    "fb": "true"
+                })
+            </div>
+
+
+            <div class="col-md-4">
+                @@include('human.html', {
+                "img": "img/face-2.jpg",
+                "name": "Евгения Артемьева",
+                "text": "",
+                "fb": "true"
+                })
+            </div>
+            <div class="col-md-4">
+                @@include('human.html', {
+                    "img": "img/face-1.jpg",
+                    "name": "Светлана Котляр",
+                    "text": "бизнес-коуч по международным стандартам (сертификат ACSTH). ",
+                    "fb": "true"
+                })
+            </div>
+            <div class="col-md-4">
+                @@include('human.html', {
+                    "img": "img/face-3.jpg",
+                    "name": "Клюкин Василий",
+                    "text": "Трудолюбивый гений. Ведущий консультант олигархов в маркетинге и рекламе.",
+                    "fb": "true",
+                    "vk": "true"
+                })
+            </div>
+        </div>
+    </div>
+
+
+    @@include('subscription.html')
+
+</div>
+
+@@include('footer.html')
+
+
+
+
+
+
+<script src="js/lib/jquery.min.js"></script>
+<script src="js/lib/slick.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

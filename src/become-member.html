@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <title>Стань членом клуба - ПримБиз</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+@@include('header.html')
+
+<div class="page-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="page-title">Стань членом клуба!</h1>
+            </div>
+        </div>
+
+        <div class="row become-member-descrip">
+            <div class="col-md-8 wysiwyg">
+
+                <p>
+                    10% членов клуба — начинающие предприниматели, люди, которые в настоящее время создают свой бизнес.
+                </p>
+                <p>
+                    90% членов клуба являются владельцами бизнеса из разных городов. В основном, это представители малого и среднего бизнеса, с оборотом до 500 млн. руб. в год.
+                </p>
+                <p>
+                    Члены клуба получают ряд преимуществ:
+                </p>
+                <ul>
+                    <li>Скидки на посещение мероприятий</li>
+                    <li>Специальные предложения от других членов клуба.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row become-member">
+            <div class="col-md-6">
+                <p class="become-member-text">
+                    Присоединяйтесь к крупнейшему сообществу молодых предпринимателей!
+                </p>
+            </div>
+            <div class="col-md-5 col-md-offset-1">
+                <a href="#" class="become-member-btn">ПРИСОЕДИНИТЬСЯ</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container upcoming-events">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="page-title">БЛИЖАЙШИЕ МЕРОПРИЯТИЯ</h2>
+            </div>
+        </div>
+        <div class="row">
+            @@include('event-cell.html', {
+                "img": "img/event-cell-1.jpg",
+                "date": "<span>25</span> Декабря",
+                "tag": "Встреча со спикерами",
+                "tagBg": "#0089d8",
+                "title": "Как создать и продать свою франшизу. Быстрый старт. Практические советы предпринимателям."
+            })
+
+            @@include('event-cell.html', {
+                "img": "img/event-cell-2.jpg",
+                "date": "<span>25-15</span> Май&nbsp;&nbsp;&nbsp;Июнь",
+                "tag": "Бизнес 2.0.",
+                "tagBg": "#00b7f4",
+                "title": "Открыт доступ к видео с форума РОСТ."
+            })
+
+            @@include('event-cell.html', {
+                "img": "img/event-cell-3.jpg",
+                "date": "<span>25-26</span> Декабря",
+                "dateWhite": "true",
+                "tag": "Бизнес завтрак",
+                "tagBg": "#f6ae6c",
+                "title": "Баварская вечеринка! 4 года 'ПРИМБИЗ'"
+            })
+        </div>
+    </div>
+
+</div>
+
+@@include('footer.html')
+
+
+<script src="js/lib/jquery.min.js"></script>
+<script src="js/lib/slick.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

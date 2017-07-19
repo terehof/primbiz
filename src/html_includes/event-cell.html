@@ -1,0 +1,19 @@
+<div class="col-sm-6 col-md-4">
+    <a href="#" class="event-cell">
+        <span class="event-cell__img" style="background-image: url(@@img);">
+            <span class="event-cell__date hide-xs @@if(context.dateWhite) {light}">
+                @@date
+            </span>
+        </span>
+        <span class="event-cell__descrip">
+            <span class="event-cell__tag" style="background-color: @@tagBg;">@@tag</span>
+            <span class="event-cell__date show-xs @@if(context.dateWhite) {light}">
+                @@date
+            </span>
+            <span class="event-cell__title">
+                @@title
+            </span>
+            <span class="event-cell__more-link show-xs">Подробнее</span>
+        </span>
+    </a>
+</div>

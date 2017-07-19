@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <title>ЛК Регистрация - ПримБиз</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+@@include('header.html')
+
+<div class="page-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="breadcrumbs">
+                    <a href="#">Главная</a> / Личный кабинет
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container login">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="page-title">регистрация </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <form action="#" class="form-login">
+                    <input type="text" class="input input-login" placeholder="Имя и фамилия">
+                    <input type="tel" class="input input-login" placeholder="Телефон">
+                    <input type="email" class="input input-login" placeholder="Электронная почта">
+                    <label class="checkbox" for="agreement-check">
+                        <span class="checkbox__main">
+                            <input type="checkbox" id="agreement-check">
+                            <span class="checkbox__clone"></span>
+                        </span>
+                        <span class="checkbox__label">Согласен на обработку персональных данных</span>
+                    </label>
+                    <a href="#" class="policy-link">Политика конфиданциальности</a>
+                    <button type="submit" class="button button--submit lg">Зарегистироваться</button>
+                </form>
+
+
+                <div class="login-social">
+                    <p>Регистрация через социальные сети</p>
+                    <a href="#" class="login-social__link link-fb"></a>
+                    <a href="#" class="login-social__link link-vk"></a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="another-login">
+                    <p>
+                        Уже регистрировались? <br>
+                        Тогда войдите по своему логину и паролю
+                    </p>
+                    <a href="#" class="button button--submit">ВОЙТИ</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+@@include('footer.html')
+
+
+
+
+
+
+<script src="js/lib/jquery.min.js"></script>
+<script src="js/lib/slick.min.js"></script>
+<script src="js/lib/jquery.ui.widget.js"></script>
+<script src="js/lib/jquery.iframe-transport.js"></script>
+<script src="js/lib/jquery.fileupload.js"></script>
+<!--<script src="js/lib/jquery.fileupload-jquery-ui.js"></script>-->
+<!--<script src="js/lib/jquery.fileupload-ui.js"></script>-->
+<script src="js/main.js"></script>
+</body>
+</html>

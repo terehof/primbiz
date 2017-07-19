@@ -1,0 +1,89 @@
+.authors-column-wrap {
+    margin-top: 4.5rem;
+}
+.authors-column {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 27rem;
+    text-decoration: none;
+    color: @mainText;
+    box-shadow: 0 2px 5px rgba(54, 54, 54, 0.2);
+    transition: box-shadow 0.25s ease;
+    will-change: box-shadow;
+    .neris;
+    &__img {
+        display: inline-block;
+        width: 52.8%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        .boxShadowMain;
+        border: 1px solid #e6e6e6;
+    }
+    &__descrip {
+        position: relative;
+        display: inline-block;
+        width: 47.2%;
+        padding: 2.5rem 2.1rem;
+    }
+    &__date {
+        display: block;
+        font-weight: 800;
+        font-size: 1.4rem;
+    }
+    &__title {
+        display: block;
+        margin: 5.5rem 0 0;
+        max-height: 13.2rem;
+        overflow: hidden;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        line-height: 1.375;
+    }
+    &__author {
+        display: block;
+        position: absolute;
+        bottom: 2.5rem;
+        left: 2.1rem;
+        font-weight: 800;
+        font-size: 1.8rem;
+    }
+
+    &:hover {
+        box-shadow: 0 8px 5px rgba(54, 54, 54, 0.2);
+    }
+}
+
+@media (max-width: 991px) {
+    .authors-column {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+@media (max-width: 480px) {
+    .authors-column {
+        display: block;
+        margin: 0;
+        padding: 1rem 0;
+        height: auto;
+        &__img {
+            display: block;
+            width: 100%;
+            height: 30rem;
+        }
+        &__descrip {
+            display: block;
+            width: 100%;
+            padding: 1.5rem 1.5rem;
+        }
+        &__author {
+            position: static;
+            margin-top: 1.5rem;
+        }
+        &__title {
+            margin: 2.5rem 0 0;
+        }
+    }
+}

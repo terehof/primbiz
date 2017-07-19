@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <title>Личный кабинет - ПримБиз</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<header class="page-header authorized">
+    <div class="header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2">
+                    <a href="#" class="main-logo"></a>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3 text-center-md">
+                    <a href="#" class="logo-opora"></a>
+                </div>
+                <div class="hide-xs col-sm-4 col-md-4 col-lg-2">
+                    <div class="header-phone">
+                        <span>Телефон администрации</span>
+                        <a href="tel:+79147924838">+7 (914) 792 48 38</a>
+                    </div>
+                </div>
+
+                <div class="hide-xs col-sm-12 col-md-12 col-lg-5 header-authorized">
+                    <a href="#" class="header-authorized__cart">Корзина</a>
+                    <a href="#" class="header-authorized__profile">
+                        ЛИЧНЫЙ КАБИНЕТ
+                        <span class="header-authorized__profile-image" style="background-image: url(img/avatar.jpg);"></span>
+                    </a>
+                    <i class="header-authorized__crown"></i>
+                    <a href="#" class="header-authorized__logout">Выход</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-bottom">
+        <div class="container show-xs">
+            <div class="col-xs-8">
+                <div class="header-phone mobile">
+                    <span>Телефон администрации</span>
+                    <a href="tel:+79147924838">+7 (914) 792 48 38</a>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="mobile-menu-btn jsMobileMenuToggle">
+                    <i class="icon"></i>
+                    <i class="icon-active"></i>
+                </div>
+            </div>
+        </div>
+        <div class="container hide-xs mobile-menu">
+            <div class="row">
+                <div class="col-md-12 col-lg-8">
+                    <nav class="menu-main">
+                        <a href="#">Мероприятия</a>
+                        <a href="#">Проекты</a>
+                        <a href="#">Спикеры и организаторы</a>
+                        <a href="#">Участники</a>
+                    </nav>
+                </div>
+                <div class="col-md-12 col-lg-4">
+                    <div class="menu-secondary">
+                        <a href="#">О ПримБизе</a>
+                        <a href="#">Новости</a>
+                        <a href="#">Контакты</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row show-xs">
+                <div class="col-xs-12 header-authorized">
+                    <a href="#" class="header-authorized__cart">Корзина</a>
+                    <a href="#" class="header-authorized__profile">
+                        ЛИЧНЫЙ КАБИНЕТ
+                        <span class="header-authorized__profile-image" style="background-image: url(img/avatar.jpg);"></span>
+                    </a>
+                    <a href="#" class="header-authorized__logout">Выход</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+<div class="page-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="breadcrumbs">
+                    <a href="#">Главная</a> / Личный кабинет
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container profile">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="page-title">Личный кабинет</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="profile__nav">
+                    <a href="#" class="active">Моя страница</a>
+                    <a href="#">Корзина</a>
+                    <a href="#">История заказов</a>
+                    <a href="#">Мои новости</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <a href="#" class="profile__edit-link">Редактировать</a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-7">
+                <h2 class="page-title page-title--profile">
+                    <span>ЮРИЙ ГИЛЁВ</span>
+                    <span class="member-tag" style="background-color: #00aace;">Спикер</span>
+
+                    <div class="profile__photo show-sm">
+                        <img src="img/profile-photo.jpg" alt="">
+                    </div>
+                </h2>
+
+                <div class="profile__position">
+                    Генеральный директор в
+                    <strong>Веб-студия «АйТи Этика»</strong>
+                </div>
+                <div class="profile__contacts">
+                    <div class="profile__contacts-item">
+                        <img src="img/profile-contacts-item-icon.jpg" alt="">
+                        <a href="#" class="">it-etika.ru</a>
+                    </div>
+                    <div class="profile__contacts-item">
+                        <img src="img/profile-contacts-item-icon.jpg" alt="">
+                        <a href="tel:+74232702107">+7 (423) 270-21-07</a>
+                    </div>
+                    <div class="profile__contacts-item">
+                        <img src="img/profile-contacts-item-icon.jpg" alt="">
+                        <a href="tel:+79509992222">+7 (950) 999-22-22</a>
+                    </div>
+                </div>
+                <div class="profile__social">
+                    <p>Я в соц сетях:</p>
+                    <a href="#" target="_blank" class="profile__social-link link-vk"></a>
+                    <a href="#" target="_blank" class="profile__social-link link-fb"></a>
+                    <a href="#" target="_blank" class="profile__social-link link-tw"></a>
+                    <a href="#" target="_blank" class="profile__social-link link-inst"></a>
+                </div>
+                <p class="profile__section-title">
+                    Сфера деятельности:
+                </p>
+                <div class="profile__tags">
+                    <a href="#" class="profile__tag">Информационные технологии</a>
+                </div>
+                <p class="profile__section-title">
+                    Специализация:
+                </p>
+                <div class="profile__tags">
+                    <a href="#" class="profile__tag">Разработка сайтов</a>
+                    <a href="#" class="profile__tag">Внедрение CRM</a>
+                    <a href="#" class="profile__tag">Реклама в интернете</a>
+                    <a href="#" class="profile__tag">Брендинг</a>
+                </div>
+
+                <div class="mobile-collapsible">
+                    <p class="profile__section-title">
+                        О себе и бизнесе
+                    </p>
+                    <p class="profile__text">
+                        Фонд развития Дальнего Востока и Байкальского региона (ФРДВ, структура Внешэкономбанка) и частный китайский холдинг Metropoly подписали меморандумы о создании двух фондов инвестиций в горнодобычу, а также в инфраструктуру и строительство. Целевой объем фондов в 2017 году составит 1 млрд долларов каждый, сообщает ИА PrimaMedia со ссылкой на полпредство президента РФ в ДФО.
+                    </p>
+                </div>
+                <div class="mobile-collapsible">
+                    <p class="profile__section-title">
+                        В чем ищу поддержку
+                    </p>
+                    <p class="profile__text">
+                        Фонд развития Дальнего Востока и Байкальского региона (ФРДВ, структура Внешэкономбанка) и частный китайский холдинг Metropoly подписали меморандумы о создании двух фондов инвестиций в горнодобычу, а также в инфраструктуру и строительство. Целевой объем фондов в 2017 году составит 1 млрд долларов каждый, сообщает ИА PrimaMedia со ссылкой на полпредство президента РФ в ДФО.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-md-offset-1">
+                <div class="profile__photo hide-sm">
+                    <img src="img/profile-photo.jpg" alt="">
+                </div>
+                <div class="mobile-collapsible">
+                    <p class="profile__section-title">
+                        Отзыв о клубе:
+                    </p>
+                    <p class="profile__text">
+                        Фонд развития Дальнего Востока и Байкальского региона (ФРДВ, структура Внешэкономбанка) и частный китайский холдинг Metropoly подписали меморандумы о создании двух фондов инвестиций в горнодобычу, а также в инфраструктуру и строительство. Целевой объем фондов в 2017 году составит 1 млрд долларов каждый, сообщает ИА PrimaMedia со ссылкой на полпредство президента РФ в ДФО.
+                    </p>
+                </div>
+
+                <div class="share-block share-block--margin-top">
+    <p class="share-block__title">Поделиться в соц сетях:</p>
+    <div class="share-block__links">
+        <a href="#" class="share-block__link link-fb"></a>
+        <a href="#" class="share-block__link link-vk"></a>
+        <a href="#" class="share-block__link link-tw"></a>
+        <a href="#" class="share-block__link link-google"></a>
+        <a href="#" class="share-block__link link-ok"></a>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container similar-members">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="similar-members__title">
+                    <h2>Участники, которые могут быть вам полезны</h2>
+                    <a href="#">Почему я вижу этих людей?</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="human-block">
+    <a href="#" class="human-block__img" style="background-image: url(img/face-1.jpg);"></a>
+    <div class="human-block__descrip">
+        <a href="#" class="human-block__name">Светлана Котляр</a>
+        <a href="#" class="human-block__text">
+            бизнес-коуч по международным стандартам (сертификат ACSTH). 
+        </a>
+        <div class="human-block__social">
+            
+                <a href="#" target="_blank" class="human-block__social-icon icon-fb"></a>
+            
+            
+            
+            
+            
+            
+            
+            
+
+        </div>
+    </div>
+</div>
+            </div>
+            <div class="col-md-4">
+                <div class="human-block">
+    <a href="#" class="human-block__img" style="background-image: url(img/face-2.jpg);"></a>
+    <div class="human-block__descrip">
+        <a href="#" class="human-block__name">Евгения Артемьева</a>
+        <a href="#" class="human-block__text">
+            
+        </a>
+        <div class="human-block__social">
+            
+                <a href="#" target="_blank" class="human-block__social-icon icon-fb"></a>
+            
+            
+            
+            
+            
+            
+            
+            
+
+        </div>
+    </div>
+</div>
+            </div>
+            <div class="col-md-4">
+                <div class="human-block">
+    <a href="#" class="human-block__img" style="background-image: url(img/face-3.jpg);"></a>
+    <div class="human-block__descrip">
+        <a href="#" class="human-block__name">Клюкин Василий</a>
+        <a href="#" class="human-block__text">
+            Трудолюбивый гений. Ведущий консультант олигархов в маркетинге и рекламе.
+        </a>
+        <div class="human-block__social">
+            
+                <a href="#" target="_blank" class="human-block__social-icon icon-fb"></a>
+            
+            
+                <a href="#" target="_blank" class="human-block__social-icon icon-vk"></a>
+            
+            
+            
+            
+            
+            
+            
+
+        </div>
+    </div>
+</div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="human-block">
+    <a href="#" class="human-block__img" style="background-image: url(img/face-2.jpg);"></a>
+    <div class="human-block__descrip">
+        <a href="#" class="human-block__name">Евгения Артемьева</a>
+        <a href="#" class="human-block__text">
+            
+        </a>
+        <div class="human-block__social">
+            
+            
+            
+            
+            
+            
+            
+            
+                <a href="#" target="_blank" class="human-block__social-icon icon-ok"></a>
+            
+
+        </div>
+    </div>
+</div>
+            </div>
+            <div class="col-md-4">
+                <div class="human-block">
+    <a href="#" class="human-block__img" style="background-image: url(img/face-3.jpg);"></a>
+    <div class="human-block__descrip">
+        <a href="#" class="human-block__name">Клюкин Василий</a>
+        <a href="#" class="human-block__text">
+            Трудолюбивый гений. Ведущий консультант олигархов в маркетинге и рекламе.
+        </a>
+        <div class="human-block__social">
+            
+                <a href="#" target="_blank" class="human-block__social-icon icon-fb"></a>
+            
+            
+            
+            
+            
+            
+                <a href="#" target="_blank" class="human-block__social-icon icon-google"></a>
+            
+            
+            
+
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+        <div class="row text-center show-xs">
+            <button class="button button--load-more">Показать еще</button>
+        </div>
+    </div>
+
+    <div class="container upcoming-events">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="page-title">БЛИЖАЙШИЕ МЕРОПРИЯТИЯ</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+    <a href="#" class="event-cell">
+        <span class="event-cell__img" style="background-image: url(img/event-cell-1.jpg);">
+            <span class="event-cell__date hide-xs ">
+                <span>25</span> Декабря
+            </span>
+        </span>
+        <span class="event-cell__descrip">
+            <span class="event-cell__tag" style="background-color: #0089d8;">Встреча со спикерами</span>
+            <span class="event-cell__date show-xs ">
+                <span>25</span> Декабря
+            </span>
+            <span class="event-cell__title">
+                Как создать и продать свою франшизу. Быстрый старт. Практические советы предпринимателям.
+            </span>
+            <span class="event-cell__more-link show-xs">Подробнее</span>
+        </span>
+    </a>
+</div>
+
+            <div class="col-sm-6 col-md-4">
+    <a href="#" class="event-cell">
+        <span class="event-cell__img" style="background-image: url(img/event-cell-2.jpg);">
+            <span class="event-cell__date hide-xs ">
+                <span>25-15</span> Май&nbsp;&nbsp;&nbsp;Июнь
+            </span>
+        </span>
+        <span class="event-cell__descrip">
+            <span class="event-cell__tag" style="background-color: #00b7f4;">Бизнес 2.0.</span>
+            <span class="event-cell__date show-xs ">
+                <span>25-15</span> Май&nbsp;&nbsp;&nbsp;Июнь
+            </span>
+            <span class="event-cell__title">
+                Открыт доступ к видео с форума РОСТ.
+            </span>
+            <span class="event-cell__more-link show-xs">Подробнее</span>
+        </span>
+    </a>
+</div>
+
+            <div class="col-sm-6 col-md-4">
+    <a href="#" class="event-cell">
+        <span class="event-cell__img" style="background-image: url(img/event-cell-3.jpg);">
+            <span class="event-cell__date hide-xs light">
+                <span>25-26</span> Декабря
+            </span>
+        </span>
+        <span class="event-cell__descrip">
+            <span class="event-cell__tag" style="background-color: #f6ae6c;">Бизнес завтрак</span>
+            <span class="event-cell__date show-xs light">
+                <span>25-26</span> Декабря
+            </span>
+            <span class="event-cell__title">
+                Баварская вечеринка! 4 года 'ПРИМБИЗ'
+            </span>
+            <span class="event-cell__more-link show-xs">Подробнее</span>
+        </span>
+    </a>
+</div>
+        </div>
+
+        <div class="row text-center show-xs">
+            <button class="button button--load-more">Все мероприятия</button>
+        </div>
+    </div>
+
+</div>
+
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="hidden-sm col-md-4">
+                <div class="footer-menu primary">
+                    <a href="#">МЕРОПРИЯТИЯ</a>
+                    <a href="#">ПРОЕКТЫ</a>
+                    <a href="#">СПИКЕРЫ И ОРГАНИЗАТОРЫ</a>
+                    <a href="#">УЧАСТНИКИ</a>
+                </div>
+                <div class="footer-menu secondary">
+                    <a href="#">О ПримБизе</a>
+                    <a href="#">Новости</a>
+                    <a href="#">Контакты</a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 footer-social">
+                <h3 class="footer-title">МЫ В СОЦ СЕТЯХ</h3>
+                <ul class="footer-social__icons">
+                    <li>
+                        <a href="#" class="footer-social__icon icon-tg"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-social__icon icon-fb"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-social__icon icon-vk"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-social__icon icon-inst"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-social__icon icon-youtube"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-12 col-md-3 col-md-offset-1 footer-contacts">
+                <h3 class="footer-title">КОНТАКТЫ</h3>
+
+                <p class="footer-contacts__phone">Телефон: <a href="tel:+79147924838">+7 (914) 792 48 38</a></p>
+
+                <a href="mailto:rost@primbiz.com" class="footer-contacts__email">rost@primbiz.com</a>
+
+                <address class="footer-contacts__address">
+                    Россия, 690091, Владивосток,
+                    ул.&nbsp;Набережная&nbsp;9, офис&nbsp;212
+                </address>
+
+                <p class="footer-contacts__requisite">ОГРН 1132500000566</p>
+                <p class="footer-contacts__requisite">ИНН 2511990351</p>
+                <p class="footer-contacts__requisite">КПП 254001001</p>
+            </div>
+        </div>
+        <div class="row footer-copyright">
+            <div class="footer-copyright-md col-xs-12 col-sm-12 col-md-12">
+                <p>© 2017 PRIMBIZ.COM</p>
+                <p class="made-by">
+                    Сделано в
+                    <a href="https://it-etika.ru/" target="_blank">
+                        <img src="img/logo-it-etika.svg" alt="">
+                    </a>
+                    2017
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+<script src="js/lib/jquery.min.js"></script>
+<script src="js/lib/slick.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

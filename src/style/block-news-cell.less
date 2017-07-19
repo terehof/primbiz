@@ -1,0 +1,114 @@
+.news-cell {
+    position: relative;
+    display: block;
+    height: 27rem;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 2px 5px rgba(54, 54, 54, 0.2);
+    transition: box-shadow 0.25s ease;
+    will-change: box-shadow;
+    color: #fff;
+    text-decoration: none;
+    &:hover {
+        box-shadow: 0 8px 5px rgba(54, 54, 54, 0.2);
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    &__date {
+        display: inline-block;
+        margin-right: 0.5rem;
+        .neris;
+        font-weight: 800;
+        font-size: 1.4rem;
+        line-height: 1.43;
+    }
+    &__tag {
+        align-self: flex-start;
+        display: inline-block;
+        margin-right: -2rem;
+        padding: 0.8rem 1.5rem;
+        font-size: 1.4rem;
+        color: #000000;
+        background-color: #fff;
+    }
+    &__category {
+        display: block;
+        position: absolute;
+        left: 2rem;
+        top: 12rem;
+        right: 2rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        .neris;
+        font-weight: 800;
+        font-size: 1.8rem;
+        white-space: nowrap;
+    }
+    &__title {
+        display: block;
+        margin: 9.8rem 0 0;
+        .neris;
+        font-weight: 600;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        overflow: hidden;
+        max-height: 9.8rem;
+    }
+    &.wide {
+        display: flex;
+        padding: 0;
+        .news-cell__tag {
+            margin-right: -2.1rem;
+        }
+    }
+    &__img {
+        width: 52.8%;
+        border: 1px solid #e6e6e6;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    &__descrip {
+        position: relative;
+        width: 47.2%;
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .news-cell {
+        height: auto;
+        &__title {
+            margin: 1rem 0 0;
+        }
+        &__category {
+            display: block;
+            position: static;
+            margin-top: 1rem;
+        }
+    }
+    .news-cell__img {
+        display: none;
+    }
+}
+@media (max-width: 480px) {
+    .news-cell {
+        padding: 1.5rem;
+        &__tag {
+            margin-right: -1.5rem !important;
+        }
+        &.wide {
+            height: auto;
+            display: block;
+            .news-cell__descrip {
+                display: block;
+                width: 100%;
+                padding: 1.5rem;
+            }
+        }
+    }
+}

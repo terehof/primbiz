@@ -1,0 +1,140 @@
+.human-block {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 17.2rem;
+    margin-bottom: 3rem;
+    color: #000;
+    text-decoration: none;
+    border: 1px solid #e6e6e6;
+    .boxShadowMain;
+    transition: box-shadow 0.25s ease;
+    &__img {
+        display: inline-block;
+        width: 47.03%;
+        height: 100%;
+        border: 1px solid #e6e6e6;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        .boxShadowMain;
+        text-decoration: none;
+    }
+    &__descrip {
+        position: relative;
+        display: inline-block;
+        width: 52.97%;
+        height: 100%;
+        padding: 2rem 2.5rem;
+    }
+    &__name {
+        display: block;
+        margin: 0 0 1rem;
+        font-size: 1.6rem;
+        color: #000;
+        .neris;
+        font-weight: 800;
+        text-decoration: none;
+    }
+    &__text {
+        display: block;
+        font-size: 1.2rem;
+        font-weight: 400;
+        overflow: hidden;
+        max-height: 5.7rem;
+        color: #000;
+        text-decoration: none;
+    }
+
+    &__social {
+        display: block;
+        position: absolute;
+        bottom: 1rem;
+        left: 2.2rem;
+    }
+    &__social-icon {
+        display: inline-block;
+        text-decoration: none;
+        width: 2.5rem;
+        height: 2.5rem;
+        padding: 0.3rem;
+        margin-left: 0.3rem;
+        box-sizing: content-box;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 2.5rem;
+        will-change: transform;
+        transition: opacity 0.2s ease;
+        &:first-child {
+            margin-left: 0;
+        }
+        &.icon-vk {
+            background-image: url(../img/icon-vk.svg);
+        }
+        &.icon-fb {
+            background-image: url(../img/icon-fb.svg);
+        }
+        &.icon-youtube {
+            background-image: url(../img/icon-youtube.svg);
+        }
+        &.icon-inst {
+            background-image: url(../img/icon-inst.svg);
+        }
+        &.icon-google {
+            background-image: url(../img/icon-google.svg);
+        }
+        &.icon-tw {
+            background-image: url(../img/icon-tw.svg);
+        }
+        &.icon-tg {
+            background-image: url(../img/icon-tg.svg);
+        }
+        &.icon-ok {
+            background-image: url(../img/icon-ok.svg);
+        }
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+    &:hover {
+        box-shadow: 0 8px 5px rgba(54, 54, 54, 0.2);
+    }
+}
+
+@media (max-width: 991px) {
+    .human-block {
+        height: 28rem;
+    }
+}
+@media (max-width: 640px) {
+    .human-block {
+        height: 22rem;
+    }
+}
+@media (max-width: 420px) {
+    .human-block {
+        //display: block;
+        //height: auto;
+        height: 16rem;
+        //&__img {
+        //    display: block;
+        //    width: 100%;
+        //    height: 28rem;
+        //}
+        //&__descrip {
+        //    display: block;
+        //    width: 100%;
+        //    padding: 1.5rem 1.5rem 5rem;
+        //}
+        //&__social {
+        //    left: 1.3rem;
+        //}
+    }
+    .human-block__descrip {
+        padding: 0.8rem 1.5rem;
+    }
+    .human-block__social {
+        bottom: 0.4rem;
+        left: 1.3rem;
+    }
+
+}

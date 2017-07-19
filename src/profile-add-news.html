@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <title>ЛК Добавление новости - ПримБиз</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+@@include('header.html')
+
+<div class="page-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="breadcrumbs">
+                    <a href="#">Главная</a> / Личный кабинет
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container profile">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="page-title">Личный кабинет</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="profile__nav">
+                    <a href="#">Моя страница</a>
+                    <a href="#">Корзина</a>
+                    <a href="#">История заказов</a>
+                    <a href="#" class="active">Мои новости</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container add-news">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="add-news__title">Отправьте информацию нашему администратору </p>
+            </div>
+        </div>
+        <form action="#">
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="text" name="news-title" class="input" placeholder="Название">
+                    <textarea name="news-text" id="news-text" cols="30" rows="10" class="textarea news-text" placeholder="Ваше сообщение">
+
+                    </textarea>
+                </div>
+                <div class="col-md-5 col-md-offset-1">
+                    <div class="add-news-photos">
+                        <!--<input id="add-news-photo-main" type="file" name="files[]" data-url="server/php/" multiple>-->
+                        <!--<button class="add-news-photos__button">Загрузить главное изображение</button>-->
+                        <!--<button class="add-news-photos__button">Загрузить дополнительные изображения</button>-->
+
+
+                        <div id="uploader-main-photo"></div>
+                        <div id="uploader-secondary-photo"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <button type="submit" class="button button--submit button--add-news-submit">ДОБАВИТЬ НОВОСТЬ</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+@@include('footer.html')
+
+
+
+
+<script src="js/lib/jquery.min.js"></script>
+<script src="js/lib/slick.min.js"></script>
+<script src="js/lib/jquery.fine-uploader.min.js"></script>
+<script src="js/main.js"></script>
+<script type="text/template" id="qq-template-main-photo">
+    <div class="qq-uploader-selector qq-uploader" qq-drop-area-text="Drop files here">
+        <div class="qq-upload-button-selector qq-upload-button">
+            <div class="add-news-photos__button">Загрузить главное изображение</div>
+        </div>
+        <ul class="qq-upload-list-selector qq-upload-list" aria-live="polite" aria-relevant="additions removals">
+            <li>
+                <span class="qq-upload-file-selector qq-upload-file"></span>
+                <button type="button" class="qq-btn qq-upload-cancel-selector qq-upload-cancel">Удалить</button>
+            </li>
+        </ul>
+    </div>
+</script>
+<script type="text/template" id="qq-template-secondary-photos">
+    <div class="qq-uploader-selector qq-uploader" qq-drop-area-text="Drop files here">
+        <div class="qq-upload-button-selector qq-upload-button">
+            <div class="add-news-photos__button">Загрузить дополнительные изображения</div>
+        </div>
+        <ul class="qq-upload-list-selector qq-upload-list" aria-live="polite" aria-relevant="additions removals">
+            <li>
+                <span class="qq-upload-file-selector qq-upload-file"></span>
+                <button type="button" class="qq-btn qq-upload-cancel-selector qq-upload-cancel">Удалить</button>
+            </li>
+        </ul>
+    </div>
+</script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+.main-event {
+    margin: 0;
+    height: 41.6rem;
+    box-shadow: 0 2px 5px rgba(54, 54, 54, 0.1);
+    color: @mainText;
+    &__img {
+        position: relative;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        .boxShadowMain;
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.01+0,0.3+100 */
+            background: -moz-linear-gradient(top,  rgba(0,0,0,0.01) 0%, rgba(0,0,0,0.3) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top,  rgba(0,0,0,0.01) 0%,rgba(0,0,0,0.3) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom,  rgba(0,0,0,0.01) 0%,rgba(0,0,0,0.3) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03000000', endColorstr='#4d000000',GradientType=0 ); /* IE6-9 */
+        }
+    }
+    &__descrip {
+        height: 100%;
+        padding: 2rem 3rem;
+    }
+    &__title {
+        position: absolute;
+        left: 2rem;
+        bottom: 2.5rem;
+        max-width: 70%;
+        color: #fefefe;
+        .neris;
+        font-weight: 600;
+        font-size: 2.4rem;
+        line-height: 1.25;
+        text-transform: uppercase;
+    }
+    &__tag {
+        display: inline-block;
+        font-size: 1.4rem;
+        color: #fff;
+        padding: 0.3rem 0.7rem;
+        text-decoration: none;
+    }
+    &__date {
+        margin-top: 2rem;
+        .neris;
+        font-size: 1.4rem;
+        font-weight: 300;
+        span {
+            display: block;
+            font-weight: 800;
+            font-size: 3rem;
+            margin: 0 0 1rem;
+        }
+    }
+    &__time {
+        display: block;
+        margin: 3rem 0 0;
+        .neris;
+        font-weight: 800;
+        font-size: 2.4rem;
+    }
+    &__location {
+        position: relative;
+        margin: 5.5rem 0 0;
+        padding: 0 0 0 2.2rem;
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #010101;
+        &:before {
+            content: '';
+            display: block;
+            width: 1.6rem;
+            height: 2rem;
+            position: absolute;
+            left: 0;
+            top: -0.2rem;
+            background: url(../img/map-marker.png) center no-repeat;
+            background-size: contain;
+        }
+    }
+    &__more-link {
+        display: inline-block;
+        padding: 1.1rem 2rem;
+        position: absolute;
+        bottom: 2.5rem;
+        left: 3rem;
+        border-radius: 2rem;
+        .neris;
+        font-weight: 800;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        color: #008ad8;
+        border: 2px solid #008ad8;
+        text-decoration: none;
+        transition: all 0.25s ease;
+        &:hover {
+            color: #ffffff;
+            background-color: #008ad8;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .main-event {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+@media (max-width: 767px) {
+    .main-event {
+        height: auto;
+        &__img {
+            height: 40rem;
+        }
+        &__descrip {
+            padding: 1.5rem 1.5rem 8rem;
+        }
+        &__date {
+            span {
+                margin-bottom: 0;
+            }
+        }
+        &__title {
+            position: static;
+            color: @mainText;
+            margin-top: 2rem;
+            max-width: 100%;
+            text-transform: none;
+        }
+        &__time {
+            display: none;
+        }
+        &__location {
+            display: none;
+        }
+        &__more-link {
+            bottom: 1.5rem;
+            left: 1.5rem;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .main-event {
+        &__img {
+            height: 20rem;
+        }
+    }
+}

@@ -1,0 +1,181 @@
+.faces-wrap {
+    margin-top: 7.5rem;
+}
+.faces-tabs {
+    margin-bottom: 2rem;
+    &__link {
+        display: inline-block;
+        vertical-align: top;
+        padding: 0.8rem 1.3rem;
+        margin-left: 2.5rem;
+        .neris;
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: @mainText;
+        cursor: pointer;
+        transition: background 0.25s ease, color 0.25s ease;
+        &:first-child {
+            margin-left: 0;
+        }
+        &:hover {
+            background-color: #00aace;
+        }
+        &.active {
+            background-color: #0089d8;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+}
+.faces-tabs-content {
+    //padding-left: 15px;
+    //padding-right: 15px;
+    display: none;
+    transform: translate(0, 3rem);
+    transition: transform 0.6s ease;
+    will-change: transform;
+    &.active {
+        display: block;
+        transform: translate(0, 0);
+    }
+    //&[data-tab="1"] {
+    //    display: block;
+    //}
+    //&[data-tab="2"] {
+    //    display: none;
+    //}
+}
+.faces-slider {
+    .slick-slide {
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+    }
+}
+.faces-slide-wrap {
+    display: inline-block;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.faces-slide {
+    width: 21rem;
+    background-color: #fff;
+    .boxShadowMain;
+    color: @mainText;
+    transition: box-shadow 0.25s ease;
+    &__img {
+        display: block;
+        text-decoration: none;
+        height: 20.8rem;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 1px solid #e6e6e6;
+        .boxShadowMain;
+    }
+    &__descrip {
+        display: block;
+        position: relative;
+        z-index: 1;
+        background-color: #fff;
+        height: 20rem;
+        padding: 2.3rem 1.8rem;
+    }
+    &__name {
+        display: block;
+        text-decoration: none;
+        color: @mainText;
+        .neris;
+        font-size: 1.8rem;
+        font-weight: 800;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    &__text {
+        display: block;
+        text-decoration: none;
+        overflow: hidden;
+        max-height: 8.3rem;
+        margin: 1.1rem 0 0;
+        font-weight: 400;
+        font-size: 1.6rem;
+        color: #000;
+        line-height: 1.3;
+    }
+    &__social {
+        display: block;
+        position: absolute;
+        bottom: 2rem;
+        left: 1.8rem;
+    }
+    &__social-icon {
+        display: inline-block;
+        text-decoration: none;
+        width: 2.5rem;
+        height: 2.5rem;
+        padding: 0.3rem;
+        margin-left: 0.3rem;
+        box-sizing: content-box;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 2.5rem;
+        will-change: opacity;
+        transition: opacity 0.2s ease;
+        &:first-child {
+            margin-left: 0;
+        }
+        &.icon-vk {
+            background-image: url(../img/icon-vk.svg);
+        }
+        &.icon-fb {
+            background-image: url(../img/icon-fb.svg);
+        }
+        &.icon-youtube {
+            background-image: url(../img/icon-youtube.svg);
+        }
+        &.icon-inst {
+            background-image: url(../img/icon-inst.svg);
+        }
+        &.icon-google {
+            background-image: url(../img/icon-google.svg);
+        }
+        &.icon-tw {
+            background-image: url(../img/icon-tw.svg);
+        }
+        &.icon-tg {
+            background-image: url(../img/icon-tg.svg);
+        }
+        &.icon-ok {
+            background-image: url(../img/icon-ok.svg);
+        }
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+    &:hover {
+        box-shadow: 0 8px 5px rgba(54, 54, 54, 0.2);
+    }
+}
+
+@media (max-width: 991px) {
+    .faces-slide-wrap {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+@media (max-width: 800px) {
+    .faces-slide {
+        width: 100%;
+    }
+    .faces-wrap {
+        margin-top: 4.5rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .faces-slide {
+        width: 21rem;
+        margin: auto;
+    }
+}

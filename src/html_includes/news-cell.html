@@ -1,0 +1,56 @@
+@@if (!context.wide) {
+    <div class="col-sm-12 col-md-3">
+        <a href="#" class="news-cell" style="background-color: @@bg;">
+            <span class="news-cell__top">
+                <span class="news-cell__date">
+                    13&nbsp;апреля <br>2017
+                    <!-- знаю, что br лучше не юзать. но тут он нужен, для бОльшей "пуленепробиваемости" верстки. Вывести br и год отдельно ж не сложно -->
+                    <!-- и &nbsp; желательно вывести) вообще круто будет, тег любой длинны не поломает верстку тогда. но если сложно - забей) -->
+                </span>
+                <span class="news-cell__tag">
+                    @@tag
+                </span>
+            </span>
+            @@if (context.category) {
+            <span class="news-cell__category">
+                    @@category
+                </span>
+            }
+
+            <span class="news-cell__title">
+                @@title
+            </span>
+        </a>
+    </div>
+}
+
+@@if (context.wide) {
+    <div class=" col-sm-12 col-md-6">
+        <a href="#" class="news-cell wide" style="background-color: @@bg;">
+            <span class="news-cell__img" style="background-image: url(@@image);">
+
+            </span>
+            <span class="news-cell__descrip">
+                <span class="news-cell__top">
+                    <span class="news-cell__date">
+                        13&nbsp;апреля <br>2017
+                        <!-- знаю, что br лучше не юзать. но тут он нужен, для бОльшей "пуленепробиваемости" верстки. Вывести br и год отдельно ж не сложно -->
+                        <!-- и &nbsp; желательно вывести) вообще круто будет, тег любой длинны не поломает верстку тогда. но если сложно - забей) -->
+                    </span>
+                    <span class="news-cell__tag">
+                        @@tag
+                    </span>
+                </span>
+                @@if (context.category) {
+                    <span class="news-cell__category">
+                        @@category
+                    </span>
+                }
+
+                <span class="news-cell__title">
+                    @@title
+                </span>
+            </span>
+        </a>
+    </div>
+}

@@ -1,0 +1,103 @@
+.event-cell {
+    display: block;
+    margin-bottom: 3rem;
+    width: 100%;
+    color: @mainText;
+    text-decoration: none;
+    background-color: #fff;
+    .boxShadowMain;
+    transition: box-shadow 0.25s ease;
+    will-change: box-shadow;
+    &:hover {
+        box-shadow: 0 10px 5px rgba(54, 54, 54, 0.1);
+        .event-cell__title {
+            color: #848484;
+        }
+    }
+
+    &__img {
+        position: relative;
+        display: block;
+        height: 24.7rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 1px solid #dcdcdc;
+    }
+    &__date {
+        display: block;
+        position: absolute;
+        top: 2rem;
+        left: 2.1rem;
+        .neris;
+        font-weight: 300;
+        font-size: 1.3rem;
+        span {
+            display: block;
+            margin: 0 0 0.8rem;
+            font-size: 3rem;
+            font-weight: 800;
+        }
+        &.light {
+            color: #fffefe;
+        }
+    }
+    &__descrip {
+        display: block;
+        height: 18.6rem;
+        padding: 1.7rem 2.1rem;
+    }
+    &__tag {
+        display: inline-block;
+        font-size: 1.4rem;
+        color: #fff;
+        padding: 0.3rem 0.7rem;
+        text-decoration: none;
+    }
+    &__title {
+        display: block;
+        margin: 1.5rem 0 0;
+        .neris;
+        font-weight: 600;
+        font-size: 2.2rem;
+        line-height: 1.1;
+        .transition(color);
+    }
+    &__more-link {
+        margin: 2rem 0 0;
+        width: 17rem;
+        text-align: center;
+        text-transform: uppercase;
+        .neris;
+        font-weight: 800;
+        font-size: 1.8rem;
+        color: #008ad8;
+        text-decoration: none;
+        padding: 1rem 1rem;
+        border: 2px solid #0089d8;
+        border-radius: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .event-cell__date {
+        display: block;
+        position: static;
+        margin: 1.5rem 0 0;
+    }
+}
+@media (max-width: 767px) {
+    .event-cell {
+        &__descrip {
+            height: auto;
+            padding: 2rem 1.5rem;
+        }
+    }
+}
+@media (max-width: 480px) {
+    .event-cell {
+        &__img {
+            height: 20rem;
+        }
+    }
+}

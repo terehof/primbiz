@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <title>Корзина со скидкой - ПримБиз</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+@@include('header.html')
+
+<div class="page-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="breadcrumbs">
+                    <a href="#">Главная</a> / Личный кабинет
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container profile">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="page-title">Личный кабинет</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="profile__nav">
+                    <a href="#">Моя страница</a>
+                    <a href="#" class="active">Корзина</a>
+                    <a href="#">История заказов</a>
+                    <a href="#">Мои новости</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container cart-items">
+        <div class="row cart-item">
+            <div class="col-xs-12 col-sm-12 col-md-4 cart-item__img" style="background-image: url(img/main-event.jpg);">
+                <div class="cart-item__date">
+                    <strong>25</strong>
+                    Декабря
+                </div>
+            </div>
+            <div class=" col-xs-12 col-sm-8 col-md-5 cart-item__descrip">
+                <div class="cart-item__tag" style="background-color: #0089d8;">Встреча со спикирами</div>
+                <p class="cart-item__title">
+                    КАК СОЗДАТЬ И ПРОДАТЬ СВОЮ ФРАНШИЗУ. БЫСТРЫЙ СТАРТ. ПРАКТИЧЕСКИЕ СОВЕТЫ ПРЕДПРИНИМАТЕЛЯМ
+                </p>
+            </div>
+            <div class=" col-xs-10 col-sm-3 col-md-2 cart-item__price">
+                <strong>3 500</strong> рублей
+            </div>
+            <div class="col-xs-2 col-sm-1 col-md-1 cart-item__close-wrap">
+                <div class="cart-item__close"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container cart-bottom">
+        <div class="row">
+            <div class="col-md-5 cart-coupon">
+                <form action="#" class="cart-coupon-form">
+                    <input type="text" class="input input-coupon" placeholder="Купон на скидку">
+                    <button class="button button--coupon">Применить </button>
+                </form>
+            </div>
+            <div class="col-md-5 col-md-offset-2 cart-total">
+                <div class="cart-total__sale">
+                    <strong>3 500</strong> рублей
+                </div>
+                <div class="cart-total__price">
+                    <strong>3 000</strong> рублей
+                </div>
+                <a href="#" class="button button--buy">Купить</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include('footer.html')
+
+
+
+
+
+
+<script src="js/lib/jquery.min.js"></script>
+<script src="js/lib/slick.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

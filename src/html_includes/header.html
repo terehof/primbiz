@@ -1,0 +1,148 @@
+@@if (context.authorized) {
+<header class="page-header authorized">
+    <div class="header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2">
+                    <a href="#" class="main-logo"></a>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3 text-center-md">
+                    <a href="#" class="logo-opora"></a>
+                </div>
+                <div class="hide-xs col-sm-4 col-md-4 col-lg-2">
+                    <div class="header-phone">
+                        <span>Телефон администрации</span>
+                        <a href="tel:+79147924838">+7 (914) 792 48 38</a>
+                    </div>
+                </div>
+
+                <div class="hide-xs col-sm-12 col-md-12 col-lg-5 header-authorized">
+                    <a href="#" class="header-authorized__cart">Корзина</a>
+                    <a href="#" class="header-authorized__profile">
+                        ЛИЧНЫЙ КАБИНЕТ
+                        <span class="header-authorized__profile-image" style="background-image: url(img/avatar.jpg);"></span>
+                    </a>
+                    <i class="header-authorized__crown"></i>
+                    <a href="#" class="header-authorized__logout">Выход</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-bottom">
+        <div class="container show-xs">
+            <div class="col-xs-8">
+                <div class="header-phone mobile">
+                    <span>Телефон администрации</span>
+                    <a href="tel:+79147924838">+7 (914) 792 48 38</a>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="mobile-menu-btn jsMobileMenuToggle">
+                    <i class="icon"></i>
+                    <i class="icon-active"></i>
+                </div>
+            </div>
+        </div>
+        <div class="container hide-xs mobile-menu">
+            <div class="row">
+                <div class="col-md-12 col-lg-8">
+                    <nav class="menu-main">
+                        <a href="#">Мероприятия</a>
+                        <a href="#">Проекты</a>
+                        <a href="#">Спикеры и организаторы</a>
+                        <a href="#">Участники</a>
+                    </nav>
+                </div>
+                <div class="col-md-12 col-lg-4">
+                    <div class="menu-secondary">
+                        <a href="#">О ПримБизе</a>
+                        <a href="#">Новости</a>
+                        <a href="#">Контакты</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row show-xs">
+                <div class="col-xs-12 header-authorized">
+                    <a href="#" class="header-authorized__cart">Корзина</a>
+                    <a href="#" class="header-authorized__profile">
+                        ЛИЧНЫЙ КАБИНЕТ
+                        <span class="header-authorized__profile-image" style="background-image: url(img/avatar.jpg);"></span>
+                    </a>
+                    <a href="#" class="header-authorized__logout">Выход</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+}
+@@if (!context.authorized) {
+<header class="page-header">
+    <div class="header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-2">
+                    <a href="#" class="main-logo"></a>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 text-center-md">
+                    <a href="#" class="logo-opora"></a>
+                </div>
+                <div class="hide-xs col-sm-6 col-md-6 col-lg-2">
+                    <div class="header-phone">
+                        <span>Телефон администрации</span>
+                        <a href="tel:+79147924838">+7 (914) 792 48 38</a>
+                    </div>
+                </div>
+                <div class="hide-xs col-sm-12 col-sm-6 col-md-6 col-lg-5">
+                    <div class="header-btns">
+                        <a href="#" class="header-link-login">Войти</a>
+                        <a href="#" class="button button--header-reg">Зарегистрироваться</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-bottom">
+        <div class="container show-xs">
+            <div class="col-xs-8">
+                <div class="header-phone mobile">
+                    <span>Телефон администрации</span>
+                    <a href="tel:+79147924838">+7 (914) 792 48 38</a>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="mobile-menu-btn jsMobileMenuToggle">
+                    <i class="icon"></i>
+                    <i class="icon-active"></i>
+                </div>
+            </div>
+        </div>
+        <div class="container hide-xs mobile-menu">
+            <div class="row">
+                <div class="col-md-12 col-lg-8">
+                    <nav class="menu-main">
+                        <a href="#">Мероприятия</a>
+                        <a href="#">Проекты</a>
+                        <a href="#">Спикеры и организаторы</a>
+                        <a href="#">Участники</a>
+                    </nav>
+                </div>
+                <div class="col-md-12 col-lg-4">
+                    <div class="menu-secondary">
+                        <a href="#">О ПримБизе</a>
+                        <a href="#">Новости</a>
+                        <a href="#">Контакты</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row show-xs">
+                <div class="col-xs-12">
+                    <div class="header-btns mobile">
+                        <a href="#" class="button button--header-reg">Зарегистрироваться</a>
+                        <a href="#" class="header-link-login">Войти</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+}

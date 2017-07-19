@@ -1,0 +1,401 @@
+.header-top {
+    padding: 2rem 0;
+    background-color: #fff;
+}
+.header-bottom {
+    position: relative;
+    background-color: #393939;
+}
+
+
+.main-logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 15.8rem;
+    height: 4.8rem;
+    cursor: pointer;
+    background: url(../img/main-logo.png) center center no-repeat;
+    background-size: contain;
+}
+.logo-opora {
+    display: inline-block;
+    vertical-align: top;
+    width: 21.8rem;
+    height: 4.8rem;
+    cursor: pointer;
+    background: url(../img/logo-opora.jpg) center center no-repeat;
+    background-size: contain;
+}
+.header-phone {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0.4rem 0 0;
+    color: @mainText;
+    font-size: 1.4rem;
+    text-align: center;
+    span {
+        display: block;
+        margin: 0 0 0.3rem;
+    }
+    a {
+        display: inline-block;
+        text-decoration: none;
+        font-weight: 800;
+        .neris;
+        font-size: 1.9rem;
+        color: @mainText;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    &.mobile {
+        margin: 0;
+        color: #ffffff;
+        a {
+            color: #fff;
+        }
+    }
+}
+.header-btns {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    &.mobile {
+        margin-top: 3rem;
+        justify-content: space-around;
+        .button--header-reg {
+            margin: 0;
+        }
+    }
+}
+.header-link-login {
+    .neris;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    color: @mainText;
+    .transition;
+    text-decoration: none;
+    &:hover {
+        color: #005195;
+    }
+}
+.menu-main {
+    display: flex;
+    a {
+        display: inline-block;
+        padding: 2rem;
+        color: #fff;
+        .neris;
+        font-size: 1.4rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: background 0.25s ease;
+        &:hover {
+            background-color: #000;
+        }
+    }
+}
+.menu-secondary {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    a {
+        display: inline-block;
+        padding: 2rem;
+        color: #fff;
+        .neris;
+        font-size: 1.4rem;
+        font-weight: 600;
+        text-decoration: none;
+        transition: background 0.25s ease;
+        &:hover {
+            background-color: #000;
+        }
+    }
+}
+.header-authorized {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4.8rem;
+    &__cart {
+        display: inline-block;
+        .neris;
+        font-weight: 600;
+        color: #000000;
+        text-decoration: none;
+        text-transform: uppercase;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &__profile {
+        display: flex;
+        align-items: center;
+        .neris;
+        font-weight: 600;
+        color: #000000;
+        text-decoration: underline;
+        text-transform: uppercase;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    &__crown {
+        display: inline-block;
+        width: 4.5rem;
+        height: 3.5rem;
+        background: url(../img/crown.png) center/100% no-repeat;
+    }
+    &__profile-image {
+        display: inline-block;
+        width: 4.8rem;
+        height: 4.8rem;
+        margin-left: 1.7rem;
+        border-radius: 50%;
+        border: 2px solid #47aae3;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &__logout {
+        display: inline-block;
+        .neris;
+        font-weight: 600;
+        color: #000000;
+        text-decoration: none;
+        text-transform: uppercase;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+.mobile-menu-btn {
+    position: relative;
+    display: inline-block;
+    float: right;
+    cursor: pointer;
+    width: 40px;
+    height: 41px;
+    .icon {
+        position: absolute;
+        opacity: 1;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: url(../img/menu-icon.png) center / 100% no-repeat;
+        transition: opacity 0.5s ease;
+    }
+    .icon-active {
+        position: absolute;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: url(../img/cross-white.svg) center / 90% no-repeat;
+    }
+    &.active {
+        .icon {
+            opacity: 0;
+        }
+        .icon-active {
+            opacity: 1;
+        }
+    }
+}
+.mobile-menu {
+
+}
+
+
+
+@media (max-width: 1200px) {
+    .page-header {
+        &.authorized {
+            .header-phone {
+                margin-top: 0;
+                float: right;
+            }
+            .logo-opora {
+                float: none;
+            }
+        }
+    }
+    .header-phone {
+        float: right;
+    }
+    .header-authorized {
+        margin-top: 2rem;
+        padding-left: 15px;
+    }
+    .text-center-md {
+        text-align: center;
+    }
+    .menu-main {
+        justify-content: center;
+    }
+    .menu-secondary {
+        justify-content: center;
+    }
+    .header-btns {
+        margin-top: 2rem;
+    }
+    .header-phone {
+        margin-top: 2rem;
+        float: left;
+    }
+    .logo-opora {
+        float: right;
+    }
+}
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px) {
+    .page-header {
+        &.authorized {
+            .header-phone {
+                float: none;
+            }
+            .header-authorized {
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+        }
+    }
+    .header-top {
+        .container {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+    .header-bottom {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        .container {
+            &:first-child {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+    }
+
+    .mobile-menu {
+        position: absolute;
+        padding-bottom: 3.5rem;
+        z-index: 2;
+        width: 100%;
+        left: 0;
+        top: 100%;
+        background-color: #393939;
+    }
+    .menu-main {
+        flex-flow: column;
+        a {
+            font-size: 1.6rem;
+        }
+    }
+    .menu-secondary {
+        flex-flow: column;
+        a {
+            font-size: 1.5rem;
+        }
+    }
+    .header-link-login {
+        color: #fff;
+        font-size: 1.6rem;
+        font-weight: 800;
+        &:hover {
+            color: #005195;
+        }
+    }
+
+    .header-authorized {
+        &__cart {
+            font-weight: 800;
+            color: #fff;
+        }
+        &__profile {
+            font-weight: 800;
+            color: #fff;
+        }
+        &__logout {
+            color: #fff;
+            font-weight: 800;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .main-logo {
+        width: 12rem;
+        height: 3.8rem;
+    }
+    .logo-opora {
+        width: 16rem;
+        height: 3.8rem;
+    }
+    .header-top {
+        padding: 1rem 0;
+    }
+    .header-phone {
+        font-size: 1.2rem;
+        a {
+            font-size: 1.6rem;
+        }
+    }
+    .menu-main {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    .menu-secondary {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    .page-header.authorized .header-authorized {
+        padding-left: 15px;
+        padding-right: 15px;
+        flex-flow: column;
+        align-items: flex-start;
+    }
+    .header-bottom .container:first-child {
+        padding: 0;
+    }
+    .header-authorized {
+        height: auto;
+        &__cart {
+
+        }
+        &__profile  {
+            margin-top: 1rem;
+        }
+        &__logout {
+            margin-top: 1rem;
+        }
+    }
+    .menu-main a,
+    .menu-secondary a {
+        padding: 1.5rem 1.5rem;
+    }
+}
+@media (max-width: 360px) {
+    .header-top .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .header-bottom .container:first-child {
+        padding: 0;
+    }
+}

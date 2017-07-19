@@ -1,0 +1,92 @@
+.projects-slider-wrap {
+    margin-top: 4.5rem;
+    .page-title {
+        margin-bottom: 2rem;
+    }
+}
+.projects-slider {
+    .slick-slide {
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+    }
+}
+.projects-slide {
+    position: relative;
+    height: 24.8rem;
+    padding: 2rem;
+    .boxShadowMain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    &__overlay {
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.8;
+    }
+    &__title {
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        .neris;
+        color: @mainText;
+        font-size: 2.4rem;
+        font-weight: 800;
+        background-color: #fff;
+        padding: 1.5rem 2rem;
+        margin-left: -2rem;
+        margin-top: 2.3rem;
+    }
+    &__descrip {
+        position: relative;
+        z-index: 1;
+        margin: 2rem 0 0;
+        .neris;
+        font-weight: 600;
+        font-size: 1.8rem;
+        color: #fff;
+    }
+    &__more-link {
+        display: inline-block;
+        position: absolute;
+        z-index: 1;
+        right: 3rem;
+        bottom: 1.5rem;
+        padding: 1.1rem 2rem;
+        border-radius: 2rem;
+        text-transform: uppercase;
+        border: 2px solid #fff;
+        .neris;
+        font-weight: 800;
+        font-size: 1.4rem;
+        color: #fff;
+        text-decoration: none;
+        transition: all 0.25s ease;
+        &:hover {
+            background: #fff;
+            color: #008ad8;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .projects-slide {
+        padding: 2rem 3.5rem;
+    }
+    .projects-slide {
+        &__title {
+            padding: 0.7rem 2rem;
+            margin-left: -3.5rem;
+            margin-top: 1rem;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-slide {
+        min-height: 24rem;
+    }
+}

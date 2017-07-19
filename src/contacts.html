@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <title>Контакты - ПримБиз</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+@@include('header.html')
+
+<div class="page-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="breadcrumbs">
+                    <a href="#">Главная</a> / Контакты
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="page-title">Контакты</h1>
+            </div>
+        </div>
+
+        <div class="row contacts">
+            <div class="col-md-4">
+                <p class="contacts__title">Адрес офиса</p>
+                <address class="contacts__address">
+                    Россия, 690091, Владивосток, <br>
+                    ул. Набережная 9, офис 212
+                </address>
+                <p class="contacts__title">Телефон администратора</p>
+                <a href="tel:+79147924838" class="contacts__phone">+7 (914) 792 48 38</a>
+            </div>
+            <div class="col-md-3 col-md-offset-1">
+                <p class="contacts__title">Реквизиты</p>
+                <p class="contacts__requisites">
+                    ОГРН 1132500000566 <br>
+                    ИНН 2511990351 <br>
+                    КПП 254001001
+                </p>
+            </div>
+            <div class="col-md-4">
+                <p class="contacts__title">Пишите нам</p>
+                <form action="#" class="contacts-form">
+                    <input type="text" name="name" class="input" placeholder="Имя и Фамилия">
+
+                    <input type="tel" name="phone" class="input" placeholder="Телефон">
+
+                    <input type="email" name="email" class="input" placeholder="Электронная почта*">
+
+                    <textarea name="message" id="message" cols="30" rows="8" class="textarea" placeholder="Ваше сообщение"></textarea>
+
+                    <button type="submit" class="button button--contacts">ОТПРАВИТЬ СООБЩЕНИЕ</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    @@include('subscription.html')
+</div>
+
+@@include('footer.html')
+
+
+
+
+
+
+<script src="js/lib/jquery.min.js"></script>
+<script src="js/lib/slick.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

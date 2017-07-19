@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <title>Главная страница - ПримБиз</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+@@include('header.html')
+
+<div class="page-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="page-title">БЛИЖАЙШИЕ МЕРОПРИЯТИЯ</h1>
+            </div>
+        </div>
+    </div>
+
+    @@include('main-event-cell.html')
+
+    <div class="container events-cells">
+        <div class="row">
+            @@include('event-cell.html', {
+                "img": "img/event-cell-1.jpg",
+                "date": "<span>25</span> Декабря",
+                "tag": "Встреча со спикерами",
+                "tagBg": "#0089d8",
+                "title": "Как создать и продать свою франшизу. Быстрый старт. Практические советы предпринимателям."
+            })
+
+            @@include('event-cell.html', {
+                "img": "img/event-cell-2.jpg",
+                "date": "<span>25-15</span> Май&nbsp;&nbsp;&nbsp;Июнь",
+                "tag": "Бизнес 2.0.",
+                "tagBg": "#00b7f4",
+                "title": "Открыт доступ к видео с форума РОСТ."
+            })
+
+            @@include('event-cell.html', {
+                "img": "img/event-cell-3.jpg",
+                "date": "<span>25-26</span> Декабря",
+                "dateWhite": "true",
+                "tag": "Бизнес завтрак",
+                "tagBg": "#f6ae6c",
+                "title": "Баварская вечеринка! 4 года 'ПРИМБИЗ'"
+            })
+
+            @@include('event-cell.html', {
+                "img": "img/event-cell-4.jpg",
+                "date": "<span>25-15</span> Май&nbsp;&nbsp;&nbsp;Июнь",
+                "tag": "Event",
+                "tagBg": "#00aace",
+                "title": "Клуб переговорщиков: подготовка к переговорам или импровизация?"
+            })
+
+            @@include('event-cell.html', {
+                "img": "img/event-cell-3.jpg",
+                "date": "<span>25-26</span> Декабря",
+                "dateWhite": "true",
+                "tag": "Инвестиционная площадка",
+                "tagBg": "#fa949c",
+                "title": "Баварская вечеринка! 4 года 'ПРИМБИЗ'"
+            })
+
+            @@include('event-cell.html', {
+                "img": "img/event-cell-1.jpg",
+                "date": "<span>25</span> Декабря",
+                "tag": "100 и 1 идея",
+                "tagBg": "#5cb479",
+                "title": "Как создать и продать свою франшизу. Быстрый старт. Практические советы предпринимателям."
+            })
+
+            @@include('event-cell.html', {
+                "img": "img/event-cell-1.jpg",
+                "date": "<span>25</span> Декабря",
+                "tag": "Форум Рост",
+                "tagBg": "#006889",
+                "title": "Как создать и продать свою франшизу. Быстрый старт. Практические советы предпринимателям."
+            })
+
+            @@include('event-cell.html', {
+                "img": "img/event-cell-2.jpg",
+                "date": "<span>25-15</span> Май&nbsp;&nbsp;&nbsp;Июнь",
+                "tag": "Инвестиционная площадка",
+                "tagBg": "#6765af",
+                "title": "Открыт доступ к видео с форума РОСТ."
+            })
+        </div>
+        <div class="row text-center show-xs">
+            <button class="button button--load-more">Все мероприятия</button>
+        </div>
+    </div>
+
+    @@include('projects-slider.html')
+
+    @@include('become-member.html')
+
+    <div class="container news-wrap">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="page-title">НОВОСТИ / ОТЧЕТЫ</h2>
+            </div>
+        </div>
+        <div class="row">
+            @@include('news-cell.html', {
+                "bg": "#066bc0",
+                "tag": "Новости клуба",
+                "title": "WORKSHOP «КАК ПРИВЕСТИ СВОИ ДЕНЬГИ В ПОРЯДОК?» С АЛЕКСЕЕМ ГЕРАСИМОВЫМ 8 АПРЕЛЯ"
+            })
+
+            @@include('news-cell.html', {
+                "wide": "true",
+                "image": "img/news-cell.jpg",
+                "bg": "#00aace",
+                "tag": "Бизнес в Приморье",
+                "title": "«100 И 1 ИДЕЯ» 6 АПРЕЛЯ"
+            })
+
+            @@include('news-cell.html', {
+                "bg": "#066bc0",
+                "tag": "Новости клуба",
+                "category": "Apple",
+                "title": "«БАВАРСКАЯ ВЕЧЕРИНКА» - 4 ГОДА КЛУБУ «ПРИМБИЗ»"
+            })
+
+            @@include('news-cell.html', {
+                "bg": "#066bc0",
+                "tag": "Новости клуба",
+                "title": "БИЗНЕС + БАНКИ = ДРУЖБА? 28 МАРТА"
+            })
+
+            @@include('news-cell.html', {
+                "bg": "#6765af",
+                "tag": "Новости партнера",
+                "category": "Apple",
+                "title": "ПИОНЕР ВИРТУАЛЬНОЙ РЕАЛЬНОСТИ ПАЛМЕР ЛАКИ ПОКИДАЕТ КОМПАНИЮ FACEBOOK"
+            })
+
+            @@include('news-cell.html', {
+                "bg": "#066bc0",
+                "tag": "Новости клуба",
+                "title": "КРУГЛЫЙ СТОЛ «АВТОРЫНОК. РОСТКИ БУДУЩЕГО» 17 МАРТА"
+            })
+
+            @@include('news-cell.html', {
+                "bg": "#066bc0",
+                "tag": "Новости клуба",
+                "title": "WORKSHOP «КАК ПРИВЕСТИ СВОИ ДЕНЬГИ В ПОРЯДОК?» С АЛЕКСЕЕМ ГЕРАСИМОВЫМ 8 АПРЕЛЯ"
+            })
+
+            @@include('news-cell.html', {
+                "wide": "true",
+                "image": "img/news-cell-2.jpg",
+                "bg": "#066bc0",
+                "tag": "Бизнес в Приморье",
+                "title": "БИЗНЕС-ЗАТРАК С ДЕНИСОМ САРАНОЙ 22 МАРТА"
+            })
+
+            @@include('news-cell.html', {
+                "bg": "#5cb479",
+                "tag": "Новости участника",
+                "category": "Facebook",
+                "title": "ПИОНЕР ВИРТУАЛЬНОЙ РЕАЛЬНОСТИ ПАЛМЕР ЛАКИ ПОКИДАЕТ КОМПАНИЮ FACEBOOK"
+            })
+
+            @@include('news-cell.html', {
+                "bg": "#066bc0",
+                "tag": "Новости клуба",
+                "title": "WORKSHOP «КАК ПРИВЕСТИ СВОИ ДЕНЬГИ В ПОРЯДОК?» С АЛЕКСЕЕМ ГЕРАСИМОВЫМ 8 АПРЕЛЯ"
+            })
+        </div>
+        <div class="row text-center show-xs">
+            <button class="button button--load-more">Все новости</button>
+        </div>
+    </div>
+
+
+    @@include('authors-column.html')
+
+    @@include('faces.html')
+
+    @@include('subscription.html')
+
+</div>
+
+@@include('footer.html')
+
+
+
+
+
+
+<script src="js/lib/jquery.min.js"></script>
+<script src="js/lib/slick.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

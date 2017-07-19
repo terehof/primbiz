@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <title>Новость участника - ПримБиз</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+@@include('header.html')
+
+<div class="page-content">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="breadcrumbs">
+                    <a href="#">Главная</a> / <a href="#">Новости</a> / Корейские инвесторы
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <p class="page-news-date">25 Декабря, 2016</p>
+                <h1 class="page-title page-title-with-tag">
+                    <div class="page-title-with-tag__title">
+                        Корейские инвесторы рассказали, что их отталкивает от ТОРов и Свободного порта Владивосток
+                    </div>
+                    <div class="page-title-with-tag__tag dark" style="background-color: #bfbfbf;">
+                        Отчет
+                    </div>
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <img src="img/news-item-member.jpg" alt="" class="news-item-image">
+                <div class="wysiwyg">
+                    <p>
+                        Фонд развития Дальнего Востока и Байкальского региона (ФРДВ, структура Внешэкономбанка) и частный китайский холдинг Metropoly подписали меморандумы о создании двух фондов инвестиций в горнодобычу, а также в инфраструктуру и строительство. Целевой объем фондов в 2017 году составит 1 млрд долларов каждый, сообщает ИА PrimaMedia со ссылкой на полпредство президента РФ в ДФО.
+                    </p>
+                    <p>
+                        Доля участия ФРДВ — 10%, партнеров из Азии — до 80%. Еще около 10% намерены вложить российские инвесторы.
+                    </p>
+                    <p>
+                        Как сообщает "Вести. Экономика", в ближайшие пять лет стороны намерены вложить до $2 млрд в акционерный капитал инфраструктурных и строительных проектов на Дальнем Востоке. С учетом кредитного плеча общий объем инвестиций в проекты составит 6-8 млрд долларов.
+                    </p>
+                    <p>
+                        Возможными объектами инвестиций являются 15 проектов в золотодобыче с ресурсами 1,5 тысячи тонн золота, два медно-золотых проекта, а также семь проектов по инфраструктуре и туристической недвижимости.
+                    </p>
+                    <p>
+                        Совместные фонды для инвестиций с участием государственных институтов развития и частного капитала станут дополнительным источником финансирования проектов на Дальнем Востоке, а также одним из инструментов включения России в масштабный интеграционный проект "Один пояс и путь".
+                    </p>
+                    <p>
+                        "Речь идет о выдвинутой Китаем инициативе объединения проектов создания "Экономического пояса Шелкового пути" и "Морского Шелкового пути XXI века". Этот глобальный долгосрочный проект перекликается с программой развития российского Дальнего Востока, которая провозглашена президентом России Владимиром Путиным национальным приоритетом на весь XXI век", — подчеркивает ФРДВ.
+                        <br>
+                        Подробнее: <a href="#" target="_blank">http://primamedia.ru/news/579513/</a>
+                    </p>
+                </div>
+
+            </div>
+            <div class="col-md-4">
+                @@include('share-block.html')
+
+                <div class="sidebar-section">
+                    <p class="sidebar-section__title">
+                        Автор
+                    </p>
+                    @@include('human.html', {
+                        "img": "img/face-3.jpg",
+                        "name": "Клюкин Василий",
+                        "text": "Трудолюбивый гений. Ведущий консультант олигархов в маркетинге и рекламе.",
+                        "fb": "true",
+                        "vk": "true"
+                    })
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container section-photos-wrap">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="page-title">Фото</h2>
+            </div>
+        </div>
+        <div class="row section-photos">
+            <div class="col-md-4">
+                <a href="img/photo-item-1.jpg" class="photo-item" data-fancybox="photos" style="background-image: url(img/photo-item-1.jpg);"></a>
+            </div>
+            <div class="col-md-4">
+                <a href="img/photo-item-2.jpg" class="photo-item" data-fancybox="photos" style="background-image: url(img/photo-item-2.jpg);"></a>
+            </div>
+            <div class="col-md-4">
+                <a href="img/photo-item-3.jpg" class="photo-item" data-fancybox="photos" style="background-image: url(img/photo-item-3.jpg);"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container similar-projects">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="page-title">
+                    Другие новости из рубрики
+                    <div>БИЗНЕС В ПРИМОРЬЕ</div>
+                </h2>
+            </div>
+        </div>
+        <div class="row">
+            @@include('news-cell.html', {
+                "bg": "#066bc0",
+                "tag": "Новости клуба",
+                "title": "БИЗНЕС + БАНКИ = ДРУЖБА? 28 МАРТА"
+            })
+
+            @@include('news-cell.html', {
+                "bg": "#6765af",
+                "tag": "Новости партнера",
+                "category": "Apple",
+                "title": "ПИОНЕР ВИРТУАЛЬНОЙ РЕАЛЬНОСТИ ПАЛМЕР ЛАКИ ПОКИДАЕТ КОМПАНИЮ FACEBOOK"
+            })
+
+            @@include('news-cell.html', {
+                "bg": "#066bc0",
+                "tag": "Новости клуба",
+                "title": "КРУГЛЫЙ СТОЛ «АВТОРЫНОК. РОСТКИ БУДУЩЕГО» 17 МАРТА"
+            })
+
+            @@include('news-cell.html', {
+                "bg": "#066bc0",
+                "tag": "Новости клуба",
+                "title": "WORKSHOP «КАК ПРИВЕСТИ СВОИ ДЕНЬГИ В ПОРЯДОК?» С АЛЕКСЕЕМ ГЕРАСИМОВЫМ 8 АПРЕЛЯ"
+            })
+        </div>
+    </div>
+
+    <div class="container upcoming-events">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="page-title">БЛИЖАЙШИЕ МЕРОПРИЯТИЯ</h2>
+            </div>
+        </div>
+        <div class="row">
+            @@include('event-cell.html', {
+                "img": "img/event-cell-1.jpg",
+                "date": "<span>25</span> Декабря",
+                "tag": "Встреча со спикерами",
+                "tagBg": "#0089d8",
+                "title": "Как создать и продать свою франшизу. Быстрый старт. Практические советы предпринимателям."
+            })
+
+            @@include('event-cell.html', {
+                "img": "img/event-cell-2.jpg",
+                "date": "<span>25-15</span> Май&nbsp;&nbsp;&nbsp;Июнь",
+                "tag": "Бизнес 2.0.",
+                "tagBg": "#00b7f4",
+                "title": "Открыт доступ к видео с форума РОСТ."
+            })
+
+            @@include('event-cell.html', {
+                "img": "img/event-cell-3.jpg",
+                "date": "<span>25-26</span> Декабря",
+                "dateWhite": "true",
+                "tag": "Бизнес завтрак",
+                "tagBg": "#f6ae6c",
+                "title": "Баварская вечеринка! 4 года 'ПРИМБИЗ'"
+            })
+        </div>
+    </div>
+
+
+    @@include('subscription.html')
+
+</div>
+
+@@include('footer.html')
+
+
+
+
+
+
+<script src="js/lib/jquery.min.js"></script>
+<script src="js/lib/slick.min.js"></script>
+<script src="js/lib/jquery.fancybox.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

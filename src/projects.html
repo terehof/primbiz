@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <title>Проекты клуба - ПримБиз</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+@@include('header.html')
+
+<div class="page-content">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="breadcrumbs">
+                    <a href="#">Главная</a> / Проекты клуба
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="page-title">ПРОЕКТЫ КЛУБА ПРИМБИЗ</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container projects-items">
+        @@include('project-item.html', {
+            "img": "img/project-item-1.jpg",
+            "bg": "#005195",
+            "titleColor": "#0089d8",
+            "title": "ВСТРЕЧА СО СПИКЕРАМИ",
+            "descrip": "Обучающие встречи с известными предпринимателями"
+        })
+
+        @@include('project-item.html', {
+            "img": "img/project-item-2.jpg",
+            "bg": "#0089d8",
+            "titleColor": "#006889",
+            "title": "ФОРУМ РОСТ",
+            "descrip": "Ежегодный форум молодых предпринимателей Рост"
+        })
+
+        @@include('project-item.html', {
+            "img": "img/project-item-3.jpg",
+            "bg": "#3ab4da",
+            "titleColor": "#5cb479",
+            "title": "100 и 1 идея",
+            "descrip": "Проведение активной встречи и поиска идей для вашего бизнеса в формате 'Мозгового штурма'"
+        })
+
+        @@include('project-item.html', {
+            "img": "img/project-item-4.jpg",
+            "bg": "#0089d8",
+            "titleColor": "#00b7f4",
+            "title": "Бизнес 2.0.",
+            "descrip": "Еженедельное видео интервью на Primamedia.ru о предпринимателях и о том как они ведут свой бизнес"
+        })
+
+        @@include('project-item.html', {
+            "img": "img/project-item-1.jpg",
+            "bg": "#005195",
+            "titleColor": "#0089d8",
+            "title": "ВСТРЕЧА СО СПИКЕРАМИ",
+            "descrip": "Обучающие встречи с известными предпринимателями"
+        })
+
+        @@include('project-item.html', {
+            "img": "img/project-item-2.jpg",
+            "bg": "#0089d8",
+            "titleColor": "#006889",
+            "title": "ФОРУМ РОСТ",
+            "descrip": "Ежегодный форум молодых предпринимателей Рост"
+        })
+
+        @@include('project-item.html', {
+            "img": "img/project-item-3.jpg",
+            "bg": "#3ab4da",
+            "titleColor": "#5cb479",
+            "title": "100 и 1 идея",
+            "descrip": "Проведение активной встречи и поиска идей для вашего бизнеса в формате 'Мозгового штурма'"
+        })
+
+        @@include('project-item.html', {
+            "img": "img/project-item-4.jpg",
+            "bg": "#0089d8",
+            "titleColor": "#00b7f4",
+            "title": "Бизнес 2.0.",
+            "descrip": "Еженедельное видео интервью на Primamedia.ru о предпринимателях и о том как они ведут свой бизнес"
+        })
+    </div>
+
+    <div class="container upcoming-events">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="page-title">БЛИЖАЙШИЕ МЕРОПРИЯТИЯ</h2>
+            </div>
+        </div>
+        <div class="row">
+            @@include('event-cell.html', {
+                "img": "img/event-cell-1.jpg",
+                "date": "<span>25</span> Декабря",
+                "tag": "Встреча со спикерами",
+                "tagBg": "#0089d8",
+                "title": "Как создать и продать свою франшизу. Быстрый старт. Практические советы предпринимателям."
+            })
+
+            @@include('event-cell.html', {
+                "img": "img/event-cell-2.jpg",
+                "date": "<span>25-15</span> Май&nbsp;&nbsp;&nbsp;Июнь",
+                "tag": "Бизнес 2.0.",
+                "tagBg": "#00b7f4",
+                "title": "Открыт доступ к видео с форума РОСТ."
+            })
+
+            @@include('event-cell.html', {
+                "img": "img/event-cell-3.jpg",
+                "date": "<span>25-26</span> Декабря",
+                "dateWhite": "true",
+                "tag": "Бизнес завтрак",
+                "tagBg": "#f6ae6c",
+                "title": "Баварская вечеринка! 4 года 'ПРИМБИЗ'"
+            })
+        </div>
+    </div>
+
+
+    @@include('subscription.html')
+
+</div>
+
+@@include('footer.html')
+
+
+
+
+
+
+<script src="js/lib/jquery.min.js"></script>
+<script src="js/lib/slick.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

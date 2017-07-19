@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <title>ЛК Мои новости - ПримБиз</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+@@include('header.html')
+
+<div class="page-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="breadcrumbs">
+                    <a href="#">Главная</a> / Личный кабинет
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container profile">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="page-title">Личный кабинет</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="profile__nav">
+                    <a href="#">Моя страница</a>
+                    <a href="#">Корзина</a>
+                    <a href="#">История заказов</a>
+                    <a href="#" class="active">Мои новости</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <a href="#" class="profile__add-news-btn">ДОБАВИТЬ НОВОСТЬ</a>
+            </div>
+        </div>
+
+        <div class="row">
+            @@include('news-cell.html', {
+                "bg": "#066bc0",
+                "tag": "Новости клуба",
+                "title": "БИЗНЕС + БАНКИ = ДРУЖБА? 28 МАРТА"
+            })
+
+            @@include('news-cell.html', {
+                "bg": "#6765af",
+                "tag": "Новости партнера",
+                "category": "Apple",
+                "title": "ПИОНЕР ВИРТУАЛЬНОЙ РЕАЛЬНОСТИ ПАЛМЕР ЛАКИ ПОКИДАЕТ КОМПАНИЮ FACEBOOK"
+            })
+
+            @@include('news-cell.html', {
+                "wide": "true",
+                "image": "img/news-cell.jpg",
+                "bg": "#00aace",
+                "tag": "Бизнес в Приморье",
+                "title": "«100 И 1 ИДЕЯ» 6 АПРЕЛЯ"
+            })
+        </div>
+    </div>
+
+</div>
+
+@@include('footer.html')
+
+
+
+
+
+
+<script src="js/lib/jquery.min.js"></script>
+<script src="js/lib/slick.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <title>Новости - ПримБиз</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+@@include('header.html')
+
+<div class="page-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="breadcrumbs">
+                    <a href="#">Главная</a> / Новости
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container news-list-wrap">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="page-title">Новости</h1>
+            </div>
+        </div>
+
+        <div class="news-tabs-wrap">
+            <div class="row">
+                <div class="col-md-12 news-tabs">
+                    <div class="news-tabs__link active" data-tab="1">Все</div>
+                    <div class="news-tabs__link" data-tab="2">Новости клуба</div>
+                    <div class="news-tabs__link" data-tab="3">Бизнес в Приморье</div>
+                    <div class="news-tabs__link" data-tab="4">Новости участников</div>
+                    <div class="news-tabs__link" data-tab="5">Новости партнеров</div>
+                    <div class="news-tabs__link" data-tab="6">Авторская колонка</div>
+                </div>
+            </div>
+            <div class="row news-tabs-content active" data-tab="1">
+                @@include('news-cell.html', {
+                    "bg": "#066bc0",
+                    "tag": "Новости клуба",
+                    "title": "WORKSHOP «КАК ПРИВЕСТИ СВОИ ДЕНЬГИ В ПОРЯДОК?» С АЛЕКСЕЕМ ГЕРАСИМОВЫМ 8 АПРЕЛЯ"
+                })
+
+                @@include('news-cell.html', {
+                    "wide": "true",
+                    "image": "img/news-cell.jpg",
+                    "bg": "#00aace",
+                    "tag": "Бизнес в Приморье",
+                    "title": "«100 И 1 ИДЕЯ» 6 АПРЕЛЯ"
+                })
+
+                @@include('news-cell.html', {
+                    "bg": "#066bc0",
+                    "tag": "Новости клуба",
+                    "category": "Apple",
+                    "title": "«БАВАРСКАЯ ВЕЧЕРИНКА» - 4 ГОДА КЛУБУ «ПРИМБИЗ»"
+                })
+
+                @@include('news-cell.html', {
+                    "bg": "#066bc0",
+                    "tag": "Новости клуба",
+                    "title": "БИЗНЕС + БАНКИ = ДРУЖБА? 28 МАРТА"
+                })
+
+                @@include('news-cell.html', {
+                    "bg": "#6765af",
+                    "tag": "Новости партнера",
+                    "category": "Apple",
+                    "title": "ПИОНЕР ВИРТУАЛЬНОЙ РЕАЛЬНОСТИ ПАЛМЕР ЛАКИ ПОКИДАЕТ КОМПАНИЮ FACEBOOK"
+                })
+
+                @@include('news-cell.html', {
+                    "bg": "#066bc0",
+                    "tag": "Новости клуба",
+                    "title": "КРУГЛЫЙ СТОЛ «АВТОРЫНОК. РОСТКИ БУДУЩЕГО» 17 МАРТА"
+                })
+
+                @@include('news-cell.html', {
+                    "bg": "#066bc0",
+                    "tag": "Новости клуба",
+                    "title": "WORKSHOP «КАК ПРИВЕСТИ СВОИ ДЕНЬГИ В ПОРЯДОК?» С АЛЕКСЕЕМ ГЕРАСИМОВЫМ 8 АПРЕЛЯ"
+                })
+
+                @@include('news-cell.html', {
+                    "wide": "true",
+                    "image": "img/news-cell-2.jpg",
+                    "bg": "#066bc0",
+                    "tag": "Бизнес в Приморье",
+                    "title": "БИЗНЕС-ЗАТРАК С ДЕНИСОМ САРАНОЙ 22 МАРТА"
+                })
+
+                @@include('news-cell.html', {
+                    "bg": "#5cb479",
+                    "tag": "Новости участника",
+                    "category": "Facebook",
+                    "title": "ПИОНЕР ВИРТУАЛЬНОЙ РЕАЛЬНОСТИ ПАЛМЕР ЛАКИ ПОКИДАЕТ КОМПАНИЮ FACEBOOK"
+                })
+
+                @@include('news-cell.html', {
+                    "bg": "#066bc0",
+                    "tag": "Новости клуба",
+                    "title": "WORKSHOP «КАК ПРИВЕСТИ СВОИ ДЕНЬГИ В ПОРЯДОК?» С АЛЕКСЕЕМ ГЕРАСИМОВЫМ 8 АПРЕЛЯ"
+                })
+
+                @@include('news-cell.html', {
+                    "bg": "#066bc0",
+                    "tag": "Новости клуба",
+                    "title": "WORKSHOP «КАК ПРИВЕСТИ СВОИ ДЕНЬГИ В ПОРЯДОК?» С АЛЕКСЕЕМ ГЕРАСИМОВЫМ 8 АПРЕЛЯ"
+                })
+
+                @@include('news-cell.html', {
+                    "wide": "true",
+                    "image": "img/news-cell.jpg",
+                    "bg": "#00aace",
+                    "tag": "Бизнес в Приморье",
+                    "title": "«100 И 1 ИДЕЯ» 6 АПРЕЛЯ"
+                })
+
+                @@include('news-cell.html', {
+                    "bg": "#066bc0",
+                    "tag": "Новости клуба",
+                    "category": "Apple",
+                    "title": "«БАВАРСКАЯ ВЕЧЕРИНКА» - 4 ГОДА КЛУБУ «ПРИМБИЗ»"
+                })
+            </div>
+
+
+            <div class="row text-center">
+                <button class="button button--load-more">Показать еще</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    @@include('subscription.html')
+
+</div>
+
+@@include('footer.html')
+
+
+
+
+
+
+<script src="js/lib/jquery.min.js"></script>
+<script src="js/lib/slick.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

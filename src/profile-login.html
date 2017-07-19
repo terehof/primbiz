@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <title>ЛК Вход - ПримБиз</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+@@include('header.html')
+
+<div class="page-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="breadcrumbs">
+                    <a href="#">Главная</a> / Личный кабинет
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container login">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="page-title">Войти</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <form action="#" class="form-login">
+                    <input type="email" class="input input-login" placeholder="Логин или электронная почта">
+                    <input type="password" class="input input-login" placeholder="Пароль">
+                    <a href="#" class="forgot-pass-link">Забыли пароль?</a>
+                    <button type="submit" class="button button--submit lg">Войти</button>
+                </form>
+
+                <div class="login-social">
+                    <p>Войти через социальные сети</p>
+                    <a href="#" class="login-social__link link-fb"></a>
+                    <a href="#" class="login-social__link link-vk"></a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="another-login">
+                    <p>Ещё не зарегистрированны?</p>
+                    <a href="#" class="button button--submit">ЗАРЕГИСТРИРОВАТЬСЯ</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+@@include('footer.html')
+
+
+
+
+
+
+<script src="js/lib/jquery.min.js"></script>
+<script src="js/lib/slick.min.js"></script>
+<script src="js/lib/jquery.ui.widget.js"></script>
+<script src="js/lib/jquery.iframe-transport.js"></script>
+<script src="js/lib/jquery.fileupload.js"></script>
+<!--<script src="js/lib/jquery.fileupload-jquery-ui.js"></script>-->
+<!--<script src="js/lib/jquery.fileupload-ui.js"></script>-->
+<script src="js/main.js"></script>
+</body>
+</html>

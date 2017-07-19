@@ -1,0 +1,36 @@
+<div class="human-block">
+    <a href="#" class="human-block__img" style="background-image: url(@@img);"></a>
+    <div class="human-block__descrip">
+        <a href="#" class="human-block__name">@@name</a>
+        <a href="#" class="human-block__text">
+            @@text
+        </a>
+        <div class="human-block__social">
+            @@if (context.fb) {
+                <a href="#" target="_blank" class="human-block__social-icon icon-fb"></a>
+            }
+            @@if (context.vk) {
+                <a href="#" target="_blank" class="human-block__social-icon icon-vk"></a>
+            }
+            @@if (context.tw) {
+                <a href="#" target="_blank" class="human-block__social-icon icon-tw"></a>
+            }
+            @@if (context.inst) {
+                <a href="#" target="_blank" class="human-block__social-icon icon-inst"></a>
+            }
+            @@if (context.youtube) {
+                <a href="#" target="_blank" class="human-block__social-icon icon-youtube"></a>
+            }
+            @@if (context.google) {
+                <a href="#" target="_blank" class="human-block__social-icon icon-google"></a>
+            }
+            @@if (context.tg) {
+                <a href="#" target="_blank" class="human-block__social-icon icon-tg"></a>
+            }
+            @@if (context.ok) {
+                <a href="#" target="_blank" class="human-block__social-icon icon-ok"></a>
+            }
+
+        </div>
+    </div>
+</div>

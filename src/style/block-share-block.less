@@ -1,0 +1,67 @@
+.share-block {
+    &.share-block--margin-top {
+        margin-top: 5rem;
+    }
+    &__title {
+        margin: 0 0 1rem;
+        font-weight: 400;
+        font-size: 1.6rem;
+        color: #010101;
+    }
+    &__links {
+        display: flex;
+        width: 75%;
+        justify-content: space-between;
+
+    }
+    &__link {
+        display: inline-block;
+        width: 3rem;
+        height: 3rem;
+        box-sizing: content-box;
+        padding: 0.5rem;
+        cursor: pointer;
+        text-decoration: none;
+        background-size: 3rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: opacity 0.2s ease;
+        &:first-child {
+            margin-left: -0.5rem;
+        }
+        &.link-fb {
+            background-image: url(../img/icon-fb.svg);
+        }
+        &.link-vk {
+            background-image: url(../img/icon-vk.svg);
+        }
+        &.link-tw {
+            background-image: url(../img/icon-tw.svg);
+        }
+        &.link-google {
+            background-image: url(../img/icon-google.svg);
+        }
+        &.link-ok {
+            background-image: url(../img/icon-ok.svg);
+        }
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .share-block {
+        margin-top: 3rem !important;
+        &__link {
+            width: 4rem;
+            height: 4rem;
+            background-size: 4rem;
+        }
+    }
+}
+@media (max-width: 480px) {
+    .share-block__links {
+        width: 100%;
+    }
+}

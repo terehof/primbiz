@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <title>Список мероприятий - ПримБиз</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+@@include('header.html')
+
+<div class="page-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="breadcrumbs">
+                    <a href="#">Главная</a> / Расписание мероприятий
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container events-list-wrap">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="page-title">РАСПИСАНИЕ МЕРОПРИЯТИЙ</h1>
+            </div>
+        </div>
+
+        <div class="events-tabs-wrap">
+            <div class="row">
+                <div class="col-md-12 events-tabs hide-xs">
+                    <div class="events-tabs__link active" data-tab="1">Все</div>
+                    <div class="events-tabs__link" data-tab="2">Встреча со спикерами</div>
+                    <div class="events-tabs__link" data-tab="3">Форум РОСТ</div>
+                    <div class="events-tabs__link" data-tab="4">100 и 1 идея</div>
+                    <div class="events-tabs__link" data-tab="5">Бизнес 2.0.</div>
+                    <div class="events-tabs__link" data-tab="6">Event</div>
+                    <div class="events-tabs__link" data-tab="7">Инвестиционная площадка </div>
+                    <div class="events-tabs__link" data-tab="8">Бизнес завтрак</div>
+                    <div class="events-tabs__link" data-tab="9">Примбиз. Форсайт</div>
+                </div>
+
+                <div class="col-md-12 events-tabs show-xs">
+                    <div class="select-wrap">
+                        <select name="events-categories" id="events-categories" class="select">
+                            <option value="1">Встреча со спикерами</option>
+                            <option value="2">Форум РОСТ</option>
+                            <option value="3">100 и 1 идея</option>
+                            <option value="4">Бизнес 2.0.</option>
+                            <option value="5">Event</option>
+                            <option value="6">Инвестиционная площадка</option>
+                            <option value="7">Бизнес завтрак</option>
+                            <option value="8">Примбиз. Форсайт</option>
+                        </select>
+                        <span class="select-arrow"></span>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="row faces-tabs-content active" data-tab="1">
+                @@include('event-cell.html', {
+                    "img": "img/event-cell-1.jpg",
+                    "date": "<span>25</span> Декабря",
+                    "tag": "Встреча со спикерами",
+                    "tagBg": "#0089d8",
+                    "title": "Как создать и продать свою франшизу. Быстрый старт. Практические советы предпринимателям."
+                })
+
+                @@include('event-cell.html', {
+                    "img": "img/event-cell-2.jpg",
+                    "date": "<span>25-15</span> Май&nbsp;&nbsp;&nbsp;Июнь",
+                    "tag": "Бизнес 2.0.",
+                    "tagBg": "#00b7f4",
+                    "title": "Открыт доступ к видео с форума РОСТ."
+                })
+
+
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="calendar-wrap">
+                        <div id="calendar"></div>
+                    </div>
+                </div>
+
+                @@include('event-cell.html', {
+                    "img": "img/event-cell-4.jpg",
+                    "date": "<span>25-15</span> Май&nbsp;&nbsp;&nbsp;Июнь",
+                    "tag": "Event",
+                    "tagBg": "#00aace",
+                    "title": "Клуб переговорщиков: подготовка к переговорам или импровизация?"
+                })
+
+                @@include('event-cell.html', {
+                    "img": "img/event-cell-3.jpg",
+                    "date": "<span>25-26</span> Декабря",
+                    "dateWhite": "true",
+                    "tag": "Инвестиционная площадка",
+                    "tagBg": "#fa949c",
+                    "title": "Баварская вечеринка! 4 года 'ПРИМБИЗ'"
+                })
+
+                @@include('event-cell.html', {
+                    "img": "img/event-cell-1.jpg",
+                    "date": "<span>25</span> Декабря",
+                    "tag": "100 и 1 идея",
+                    "tagBg": "#5cb479",
+                    "title": "Как создать и продать свою франшизу. Быстрый старт. Практические советы предпринимателям."
+                })
+
+                @@include('event-cell.html', {
+                    "img": "img/event-cell-1.jpg",
+                    "date": "<span>25</span> Декабря",
+                    "tag": "Форум Рост",
+                    "tagBg": "#006889",
+                    "title": "Как создать и продать свою франшизу. Быстрый старт. Практические советы предпринимателям."
+                })
+
+                @@include('event-cell.html', {
+                    "img": "img/event-cell-2.jpg",
+                    "date": "<span>25-15</span> Май&nbsp;&nbsp;&nbsp;Июнь",
+                    "tag": "Инвестиционная площадка",
+                    "tagBg": "#6765af",
+                    "title": "Открыт доступ к видео с форума РОСТ."
+                })
+
+                @@include('event-cell.html', {
+                    "img": "img/event-cell-3.jpg",
+                    "date": "<span>25-26</span> Декабря",
+                    "dateWhite": "true",
+                    "tag": "Инвестиционная площадка",
+                    "tagBg": "#fa949c",
+                    "title": "Баварская вечеринка! 4 года 'ПРИМБИЗ'"
+                })
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container similar-projects">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="page-title">ОТЧЕТЫ ПРОШЕДШИХ МЕРОПРИЯТИЙ</h2>
+            </div>
+        </div>
+        <div class="row">
+            @@include('news-cell.html', {
+                "bg": "#066bc0",
+                "tag": "Отчет",
+                "title": "БИЗНЕС + БАНКИ = ДРУЖБА? 28 МАРТА"
+            })
+
+            @@include('news-cell.html', {
+                "bg": "#066bc0",
+                "tag": "Отчет",
+                "category": "Apple",
+                "title": "ПИОНЕР ВИРТУАЛЬНОЙ РЕАЛЬНОСТИ ПАЛМЕР ЛАКИ ПОКИДАЕТ КОМПАНИЮ FACEBOOK"
+            })
+
+            @@include('news-cell.html', {
+                "bg": "#066bc0",
+                "tag": "Отчет",
+                "title": "КРУГЛЫЙ СТОЛ «АВТОРЫНОК. РОСТКИ БУДУЩЕГО» 17 МАРТА"
+            })
+
+            @@include('news-cell.html', {
+                "bg": "#066bc0",
+                "tag": "Отчет",
+                "title": "WORKSHOP «КАК ПРИВЕСТИ СВОИ ДЕНЬГИ В ПОРЯДОК?» С АЛЕКСЕЕМ ГЕРАСИМОВЫМ 8 АПРЕЛЯ"
+            })
+        </div>
+        <div class="row text-center show-xs">
+            <button class="button button--load-more">Все новости</button>
+        </div>
+    </div>
+
+    <div class="container upcoming-events">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="page-title">АРХИВ МЕРОПРИЯТИЙ</h2>
+            </div>
+        </div>
+        <div class="row">
+            @@include('event-cell.html', {
+                "img": "img/event-cell-1.jpg",
+                "date": "<span>25</span> Декабря",
+                "tag": "Встреча со спикерами",
+                "tagBg": "#0089d8",
+                "title": "Как создать и продать свою франшизу. Быстрый старт. Практические советы предпринимателям."
+            })
+
+            @@include('event-cell.html', {
+                "img": "img/event-cell-2.jpg",
+                "date": "<span>25-15</span> Май&nbsp;&nbsp;&nbsp;Июнь",
+                "tag": "Бизнес 2.0.",
+                "tagBg": "#00b7f4",
+                "title": "Открыт доступ к видео с форума РОСТ."
+            })
+
+            @@include('event-cell.html', {
+                "img": "img/event-cell-3.jpg",
+                "date": "<span>25-26</span> Декабря",
+                "dateWhite": "true",
+                "tag": "Бизнес завтрак",
+                "tagBg": "#f6ae6c",
+                "title": "Баварская вечеринка! 4 года 'ПРИМБИЗ'"
+            })
+        </div>
+        <div class="row text-center">
+            <button class="button button--load-more hide-xs">Показать еще</button>
+            <button class="button button--load-more show-xs-dib">Весь архив</button>
+        </div>
+    </div>
+
+
+    @@include('subscription.html')
+
+</div>
+
+@@include('footer.html')
+
+
+
+
+
+
+<script src="js/lib/jquery.min.js"></script>
+<script src="js/lib/slick.min.js"></script>
+<script src="js/lib/jquery-ui.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

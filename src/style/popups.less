@@ -1,0 +1,81 @@
+.popup {
+  display: none;
+  padding: 6.5rem !important;
+  text-align: center !important;
+  border-radius: 2.4rem;
+  box-shadow: 0 0 10px rgba(54, 54, 54, 0.35);
+  border: 3px solid #393939 !important;
+}
+.popup-invite {
+  width: 69.8rem;
+  max-width: 90%;
+  .popup-content {
+    width: 37.2rem;
+  }
+}
+.popup-delete {
+  padding: 7.7rem 7.5rem !important;
+  width: 81rem;
+  max-width: 90%;
+  .popup-content {
+    width: 37.2rem;
+  }
+  .popup-title {
+    margin-bottom: 3.8rem;
+  }
+}
+
+.popup-content {
+  margin: auto;
+  max-width: 100%;
+}
+.popup-title {
+  margin: 0 0 1.8rem;
+  .neris;
+  font-weight: 800;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  color: #000000;
+}
+.popup-text {
+  margin: 0 0 2.2rem;
+  .arial;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #010101;
+  text-align: left;
+}
+
+.popup-invite-form {
+  .button--submit {
+    width: 100%;
+  }
+  .button--submit.lg {
+    padding: 1.4rem 1rem;
+  }
+}
+.fancybox-close-small {
+  top: 2.3rem !important;
+  right: 2.4rem !important;
+  width: 4.2rem !important;
+  height: 4.2rem !important;
+  background: url(../img/cross-circular.svg) no-repeat !important;
+  background-size: 100% !important;
+  transition: all 0.25s ease;
+  &:after {
+    display: none;
+  }
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .popup-invite {
+    padding: 7rem 2rem !important;
+  }
+  .popup-delete {
+    padding: 7rem 2rem !important;
+  }
+}
