@@ -8,6 +8,7 @@
     height: 27rem;
     text-decoration: none;
     color: @mainText;
+    background-color: #fff;
     box-shadow: 0 2px 5px rgba(54, 54, 54, 0.2);
     transition: box-shadow 0.25s ease;
     will-change: box-shadow;
@@ -64,26 +65,27 @@
 }
 @media (max-width: 480px) {
     .authors-column {
-        display: block;
-        margin: 0;
-        padding: 1rem 0;
-        height: auto;
+        height: 47vw;
+
         &__img {
-            display: block;
-            width: 100%;
-            height: 30rem;
+            width: 52.3%;
         }
         &__descrip {
-            display: block;
-            width: 100%;
-            padding: 1.5rem 1.5rem;
+            width: 47.7%;
+            padding: 3vw;
         }
         &__author {
-            position: static;
-            margin-top: 1.5rem;
+            font-size: 3vw;
+            left: 3vw;
+            bottom: 3vw;
+        }
+        &__date {
+            font-size: 3vw;
         }
         &__title {
-            margin: 2.5rem 0 0;
+            margin: 9vw 0 0;
+            font-size: 2.6vw;
+            max-height: 25vw;
         }
     }
 }

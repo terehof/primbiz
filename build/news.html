@@ -101,13 +101,27 @@
 
         <div class="news-tabs-wrap">
             <div class="row">
-                <div class="col-md-12 news-tabs">
+                <div class="col-md-12 news-tabs hide-xs">
                     <div class="news-tabs__link active" data-tab="1">Все</div>
                     <div class="news-tabs__link" data-tab="2">Новости клуба</div>
                     <div class="news-tabs__link" data-tab="3">Бизнес в Приморье</div>
                     <div class="news-tabs__link" data-tab="4">Новости участников</div>
                     <div class="news-tabs__link" data-tab="5">Новости партнеров</div>
                     <div class="news-tabs__link" data-tab="6">Авторская колонка</div>
+                </div>
+
+                <div class="col-md-12 news-tabs show-xs">
+                    <div class="select-wrap">
+                        <select name="news-categories" id="news-categories" class="select">
+                            <option value="1">Все</option>
+                            <option value="2">Новости клуба</option>
+                            <option value="3">Бизнес в Приморье</option>
+                            <option value="4">Новости участников</option>
+                            <option value="5">Новости партнеров</option>
+                            <option value="6">Авторская колонка</option>
+                        </select>
+                        <span class="select-arrow"></span>
+                    </div>
                 </div>
             </div>
             <div class="row news-tabs-content active" data-tab="1">

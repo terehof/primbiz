@@ -101,10 +101,11 @@ app.main = {
     profileCollapsible: function () {
         if ($(window).width() < 992) {
             if ($('.mobile-collapsible').length) {
-                $('.mobile-collapsible > .profile__section-title').on('click', function () {
+                $('.mobile-collapsible > .profile__section-title').on('click', function (e) {
+
                     var $this = $(this);
                     $this.toggleClass('active');
-                    $this.closest('.mobile-collapsible').find('.profile__text').slideToggle();
+                    $this.closest('.mobile-collapsible').find('.profile__text').stop( true, false ).slideToggle();
                 })
             }
         }
@@ -193,6 +194,9 @@ app.main = {
             var $this = $(this),
                 $menu = $('.mobile-menu');
             $this.toggleClass('active');
+            if ($('.icon-cart-mobile').length) {
+                $('.icon-cart-mobile').toggleClass('visible');
+            }
             $menu.slideToggle();
         })
     },
