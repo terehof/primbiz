@@ -1364,6 +1364,13 @@ body {
         width: 100%;
     }
 }
+.icon-crown-mobile {
+    display: none;
+    width: 4.6rem;
+    img {
+        width: 100%;
+    }
+}
 
 
 
@@ -1596,7 +1603,20 @@ body {
     }
     .icon-cart-mobile {
         display: inline-block;
-        margin-right: 3rem;
+        margin-right: 2rem;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.4s ease;
+        &.visible {
+            opacity: 1;
+            pointer-events: all;
+        }
+    }
+    .icon-crown-mobile {
+        display: inline-block;
+        margin-right: 2rem;
+        margin-top: 0.3rem;
+        vertical-align: top;
         opacity: 0;
         pointer-events: none;
         transition: opacity 0.4s ease;
@@ -1825,6 +1845,9 @@ body {
         }
     }
     .icon-cart-mobile {
+        margin-right: 1.5rem;
+    }
+    .icon-crown-mobile {
         margin-right: 1.5rem;
     }
 }

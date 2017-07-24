@@ -197,6 +197,9 @@ app.main = {
             if ($('.icon-cart-mobile').length) {
                 $('.icon-cart-mobile').toggleClass('visible');
             }
+            if ($('.icon-crown-mobile').length) {
+                $('.icon-crown-mobile').toggleClass('visible');
+            }
             $menu.slideToggle();
         })
     },
